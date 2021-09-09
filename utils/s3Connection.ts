@@ -11,8 +11,8 @@ export default class S3 {
   s3Client: S3Client;
   bucketName: string;
 
-  constructor(bucketName: string) {
-    this.bucketName = bucketName;
+  constructor() {
+    this.bucketName = 'arrd';
     this.s3Client = new S3Client({
       region: process.env.S3_REGION,
       credentials: {

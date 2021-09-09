@@ -1,10 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
 import Caroussel from "../lib/Caroussel/Caroussel";
 import styles from "../styles/Home.module.css";
 import odin from "../utils/odin";
+import useIsMobile from "../utils/useIsMobile";
 
-export default function Home({ images }) {
+interface props {
+  images: { mobile: Array<string>; desktop: Array<string> };
+}
+
+export default function Home({ images }: props) {
+  const isMobile = useIsMobile();
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +18,7 @@ export default function Home({ images }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.title}>
-        <Caroussel images={images} />
+        <Caroussel images={isMobile ? images.mobile : images.desktop} />
       </div>
 
       <p>{process.env.NEXT_PUBLIC_URL_BUCKET}</p>
@@ -42,10 +47,9 @@ export default function Home({ images }) {
 
 export async function getServerSideProps({ req }) {
   const baseUrl = `${process.env.NO_SSL ? "http" : "https"}://${
-    req.headers.host
-  }`;
-
-  const { data } = await odin.get(`${baseUrl}/api/hello`);
+      req.headers.host
+    }`,
+    { data } = await odin.get(`${baseUrl}/api/carroussel`);
 
   return {
     props: {

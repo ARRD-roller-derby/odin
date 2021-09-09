@@ -1,16 +1,43 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --color-arrd: #378f6a;
+  --color-second: #0d4863;
+  --color-tierce: #f4cb71;
+  --color-quator: #1e583d;
+  --color-txt: #1a1a1a;
+  --color-txt-light: #dfdfdf;
+  --color-txt-error: #860808;
+  --color-bg: #f5f1e8;
+  --color-bg-light: #faf6f3;
+  --color-bg-accent: #cecbc1;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  * {
+    box-sizing: border-box;
+    scrollbar-color: var(--color-arrd) transparent;
+    scrollbar-width: thin;
+    font-size: 16px;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var( --color-arrd);
+    transition: 200ms ease-in-out;
+  }
+  
+  
+  
+  
