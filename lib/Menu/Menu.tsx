@@ -1,5 +1,29 @@
+import useIsMobile from "../../utils/useIsMobile";
+import MenuMobile from "./MenuMobile";
+import MenuDesktop from "./MenuDesktop";
+import { useInView } from "react-intersection-observer";
 import classes from "./menu.module.css";
+import ArrowBottom from "../ArrowBottom/ArrowBottom";
 
-export default function Menu(){
-    return <div className="containe">Menu</div>
+export default function Menu() {
+  const isMobile = useIsMobile(),
+    { ref, inView } = useInView({
+      threshold: 0,
+    });
+
+  return isMobile ? (
+    <MenuMobile />
+  ) : (
+    <>
+      <div className={classes.containerDesktop} ref={ref}>
+        <MenuDesktop />
+        <ArrowBottom />
+      </div>
+      {!inView && (
+        <div className={classes.containerDesktopInView}>
+          <MenuDesktop />
+        </div>
+      )}
+    </>
+  );
 }

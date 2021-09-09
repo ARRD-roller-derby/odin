@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import Menu from "../Menu/Menu";
 
 export default function Caroussel({ images }) {
   const [size, setSize] = useState<
@@ -11,22 +12,39 @@ export default function Caroussel({ images }) {
   >(undefined);
 
   useEffect(() => {
+    handleResize();
+  }, [images]);
+
+  function handleResize() {
     const width = window.innerWidth,
-      height = window.innerHeight;
+      height = width / 16* 9;
     setSize({ width, height });
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div className={classes.container}>
       <div className={classes.slider}>
-        <div className={classes.title}>
-          ROUEN ROLLER DERBY - MAROMME
+        <div className={classes.titleContainer}>
+          <h1 className={classes.title}>association ROUEN ROLLER DERBY</h1>
+          <h2 className={classes.subtitle}>- maromme -</h2>
         </div>
         {size && (
-          <Slider infinite autoplay speed={800} autoplaySpeed={5000} fade className={classes.carroussel}>
+          <Slider
+            infinite
+            autoplay
+            speed={800}
+            autoplaySpeed={5000}
+            fade
+            className={classes.carroussel}
+          >
             {images.map((slide: string) => (
               <div className={classes.slide} key={slide}>
-                <Image
+                <img
                   src={process.env.NEXT_PUBLIC_URL_BUCKET + slide}
                   width={size.width}
                   height={size.height}
@@ -36,6 +54,7 @@ export default function Caroussel({ images }) {
           </Slider>
         )}
       </div>
+      <Menu />
     </div>
   );
 }
