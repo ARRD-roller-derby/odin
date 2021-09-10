@@ -6,6 +6,14 @@
   transform: translateY(100%);
 }
 
+.containerMobile {
+  position: absolute;
+  bottom: 50px;
+  animation: containerDesktop 600ms ease-in-out forwards;
+  animation-delay: 800ms;
+  transform: translateY(100%);
+}
+
 .containerDesktop,
 .containerDesktopInView {
   left: 10px;

@@ -1,7 +1,7 @@
 .container {
   position: absolute;
   bottom: -35px;
-  left: calc(50% - 15);
+  left: calc(50% - 15px);
   width: 30px;
   height: 30px;
   transform: rotate(-45deg);

@@ -16,8 +16,8 @@ export default function Caroussel({ images }) {
   }, [images]);
 
   function handleResize() {
-    const width = window.innerWidth,
-      height = width / 16* 9;
+    const width = window.innerWidth < 750 ? window.innerHeight / 16* 9 : window.innerWidth,
+      height = window.innerWidth > 750 ? width / 16* 9 : window.innerHeight;
     setSize({ width, height });
   }
 

@@ -12,7 +12,10 @@ export default function Menu() {
     });
 
   return isMobile ? (
+    <div className={classes.containerMobile} ref={ref}>
     <MenuMobile />
+    <ArrowBottom />
+    </div>
   ) : (
     <>
       <div className={classes.containerDesktop} ref={ref}>
