@@ -1,16 +1,113 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --color-arrd: #378f6a;
+  --color-second: #0d4863;
+  --color-tierce: #f4cb71;
+  --color-quator: #1e583d;
+  --color-txt: #1a1a1a;
+  --color-txt-light: #dfdfdf;
+  --color-txt-error: #860808;
+  --color-bg: #f5f1e8;
+  --color-bg-light: #faf6f3;
+  --color-bg-accent: #cecbc1;
 }
 
 * {
   box-sizing: border-box;
+  scrollbar-color: var(--color-arrd) transparent;
+  scrollbar-width: thin;
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-arrd);
+  transition: 200ms ease-in-out;
+}
+
+h2 {
+  font-size: 2.3em;
+  color: var(--color-second);
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.trash {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-quator);
+  text-shadow: 4px 4px 0 var(--color-tierce);
+  font-family: "Londrina Solid", cursive;
+}
+
+.button {
+  text-decoration: none;
+  background: var(--color-second);
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  transition: 200ms ease-in-out;
+  margin: 7px;
+  font-size: 1.3em;
+}
+
+.button:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.containerImg {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: -5px -5px 0 var(--color-bg), -10px -10px 0 var(--color-tierce),
+    5px 5px 0 var(--color-bg), 10px 10px 0 var(--color-tierce);
+  transform: rotate(-1deg);
+  transition: 200ms ease-in-out;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+li {
+  font-size: 1.3em;
+}
+
+p a, li a {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  p {
+    font-size: 1.3em;
+  }
+  
 }

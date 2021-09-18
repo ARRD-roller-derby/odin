@@ -1,0 +1,40 @@
+.container {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--color-arrd);
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.article {
+  padding: 30px;
+  background: var(--color-bg);
+  border-radius: 5px;
+  max-width: 700px;
+  margin: 20px 10px -15px 10px;
+  box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2.5em;
+  }
+}
