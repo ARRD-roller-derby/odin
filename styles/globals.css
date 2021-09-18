@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap");
 
 :root {
   --color-arrd: #378f6a;
@@ -27,6 +28,10 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 ::-webkit-scrollbar {
   width: 3px;
 }
@@ -38,4 +43,71 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--color-arrd);
   transition: 200ms ease-in-out;
+}
+
+h2 {
+  font-size: 2.3em;
+  color: var(--color-second);
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.trash {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-quator);
+  text-shadow: 4px 4px 0 var(--color-tierce);
+  font-family: "Londrina Solid", cursive;
+}
+
+.button {
+  text-decoration: none;
+  background: var(--color-second);
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  transition: 200ms ease-in-out;
+  margin: 7px;
+  font-size: 1.3em;
+}
+
+.button:hover {
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.containerImg {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: -5px -5px 0 var(--color-bg), -10px -10px 0 var(--color-tierce),
+    5px 5px 0 var(--color-bg), 10px 10px 0 var(--color-tierce);
+  transform: rotate(-1deg);
+  transition: 200ms ease-in-out;
+}
+
+.img img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+li {
+  font-size: 1.3em;
+}
+
+p a, li a {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  p {
+    font-size: 1.3em;
+  }
+  
 }

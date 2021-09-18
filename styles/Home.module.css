@@ -1,10 +1,23 @@
 .container {
-  display: flex;
   overflow-y: auto;
-  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
   background: var(--color-arrd);
+  padding: 0;
 }
 
 .title {
   height: 100vh;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 0;
+}
+
+.footer {
+  margin: 0;
 }

@@ -2,7 +2,6 @@ import classes from "./Caroussel.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Menu from "../Menu/Menu";
 
@@ -16,8 +15,11 @@ export default function Caroussel({ images }) {
   }, [images]);
 
   function handleResize() {
-    const width = window.innerWidth < 750 ? window.innerHeight / 16* 9 : window.innerWidth,
-      height = window.innerWidth > 750 ? width / 16* 9 : window.innerHeight;
+    const width =
+        window.innerWidth < 750
+          ? (window.innerHeight / 16) * 9
+          : window.innerWidth,
+      height = window.innerWidth > 750 ? (width / 16) * 9 : window.innerHeight;
     setSize({ width, height });
   }
 
@@ -38,7 +40,7 @@ export default function Caroussel({ images }) {
             infinite
             autoplay
             speed={800}
-            autoplaySpeed={5000}
+            autoplaySpeed={3000}
             fade
             className={classes.carroussel}
           >

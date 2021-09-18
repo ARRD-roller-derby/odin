@@ -1,0 +1,70 @@
+.block {
+  width: 75%;
+  display: flex;
+}
+
+.block[data-position="left"] {
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.block[data-position="right"] {
+  justify-self: end;
+  align-self: flex-end;
+}
+
+.block[data-position="left"] .container {
+  border-radius: 0 40px 40px 0;
+}
+
+.block[data-position="right"] .container {
+  border-radius: 40px 0 0 40px;
+}
+
+.container {
+  background: var(--color-bg);
+  padding: 20px;
+  font-size: 1.5em;
+  width: 100%;
+  transition: opacity 800ms ease-in-out, transform 500ms ease-in-out,
+    box-shadow 1000ms ease-in-out;
+}
+
+.block[data-position="left"] .container[data-inview="false"],
+.block[data-position="right"] .container[data-inview="false"] {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.block[data-position="left"] .container[data-inview="true"] {
+  box-shadow: -20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.block[data-position="right"] .container[data-inview="true"] {
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.block[data-position="left"] .container[data-inview="false"] {
+  opacity: 0;
+  transform: translate(-200%, 50%) rotate(-5deg);
+}
+
+.block[data-position="left"] .container[data-inview="true"] {
+  transform: translateX(0, 0);
+  opacity: 1;
+}
+
+.block[data-position="right"] .container[data-inview="false"] {
+  opacity: 0;
+  transform: translate(200%, -50%) rotate(5deg);
+}
+
+.block[data-position="right"] .container[data-inview="true"] {
+  transform: translateX(0, 0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .block {
+    width: 90%;
+  }
+}

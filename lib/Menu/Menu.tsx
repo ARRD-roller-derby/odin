@@ -5,24 +5,23 @@ import { useInView } from "react-intersection-observer";
 import classes from "./menu.module.css";
 import ArrowBottom from "../ArrowBottom/ArrowBottom";
 
-export default function Menu() {
+export default function Menu({fixed = false}: {fixed?: boolean}) {
   const isMobile = useIsMobile(),
     { ref, inView } = useInView({
       threshold: 0,
     });
 
   return isMobile ? (
-    <div className={classes.containerMobile} ref={ref}>
-    <MenuMobile />
-    <ArrowBottom />
+    <div ref={ref}>
+      <MenuMobile fixed={fixed} />
     </div>
   ) : (
     <>
-      <div className={classes.containerDesktop} ref={ref}>
+    {!fixed &&  <div className={classes.containerDesktop} ref={ref}>
         <MenuDesktop />
         <ArrowBottom />
-      </div>
-      {!inView && (
+      </div>}
+      {(!inView || fixed) && (
         <div className={classes.containerDesktopInView}>
           <MenuDesktop />
         </div>

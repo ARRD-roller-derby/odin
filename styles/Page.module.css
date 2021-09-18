@@ -1,0 +1,59 @@
+.subtitle {
+    font-size: 1.8em;
+    color: var(--color-arrd);
+    margin: 5px 0;
+}
+.details {
+    font-size: 1.5em;
+    color: var(--color-txt-error);
+    margin: 5px 0;
+}
+
+.map {
+    margin-top: 20px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -5px -5px 0 var(--color-bg), -10px -10px 0 var(--color-tierce),
+      5px 5px 0 var(--color-bg), 10px 10px 0 var(--color-tierce);
+    transform: rotate(-1deg);
+    transition: 200ms ease-in-out;
+}
+
+.address {
+    padding: 5px 0;
+}
+
+.address p {
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.fbArticles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fbArticle {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: var(--color-bg-light);
+    border-radius: 3px;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, .1);
+}
+
+.date {
+    font-size: 1em;
+    font-style: italic;
+    color: var(--color-arrd)
+}
