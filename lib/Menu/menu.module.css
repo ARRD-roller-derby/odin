@@ -21,14 +21,12 @@
   right: 0;
   animation: containerDesktop 600ms ease-in-out forwards;
   animation-delay: 800ms;
-  transform: translateY(100%);
 }
 
 .containerMobile[data-fixed="true"] {
   position: fixed;
   top: 10px;
   bottom: inherit;
-  transform: translateY(0);
 }
 
 .containerDesktop,
