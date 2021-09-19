@@ -1,5 +1,4 @@
 import { socialNetworks } from "../../utils/socialNetworks";
-import Image from "next/image";
 import classes from "./SocialNetworks.module.css";
 import { partnersInterface } from "../../utils/interfaces";
 
@@ -11,7 +10,7 @@ export default function SocialNetworks(){
         <div className={classes.partner} key={network.title}>
           <a {...network} target="_blank">
           <div className={classes.logo}>
-            <Image {...network} width={network.width} height={network.heigth}/>
+            <img {...network} width={network.width} height={network.heigth}/>
             </div>
           </a>
         </div>

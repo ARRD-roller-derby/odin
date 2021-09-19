@@ -1,7 +1,6 @@
 import BlockIndex from "../BlockIndex/BlockIndex";
 import classes from "./BlockDerby.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function BlockDerby() {
   return (
@@ -18,21 +17,21 @@ export default function BlockDerby() {
               <span className="trash">1937</span>.
             </p>
             <p>
-              le <span className="trash">but du jeu</span> étant pour l{`'`}une des
+              Le <span className="trash">but du jeu</span> étant pour l{`'`}une des
               joueuses ou l{`'`}un des joueurs de réussir à dépasser en un laps de
               temps donné les joueuses ou les joueurs adverses sans se faire
-              projeter au sol ni sortir de la piste
+              projeter au sol ni sortir de la piste.
             </p>
           </div>
           <div className={classes.buttons}>
-            <Link href="/le-roller-derby">
+            <Link href="/roller-derby">
               <a className="button">Je veux tout savoir !</a>
             </Link>
           </div>
         </div>
         <div className="containerImg">
           <div className="img">
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_URL_BUCKET}pictures/rd_explain.webp`}
               width="800"
               height="894"

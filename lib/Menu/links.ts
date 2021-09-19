@@ -10,7 +10,7 @@ export const links = [
     side: "right",
   },
   {
-    title: "nous rejoindre",
+    title: "Nous rejoindre",
     href: "nous-rejoindre",
     side: "right",
   },
@@ -26,7 +26,7 @@ export const links = [
     side: "left",
   },
   {
-    title: "actualités",
+    title: "Actualités",
     href: "actu",
     side: "left",
   },

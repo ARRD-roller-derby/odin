@@ -1,6 +1,5 @@
 import { partners } from "../../utils/partners";
 import classes from "./Partners.module.css";
-import Image from "next/image";
 import { partnersInterface } from "../../utils/interfaces";
 
 export default function Partners() {
@@ -12,7 +11,7 @@ export default function Partners() {
         <div className={classes.partner} key={partner.title}>
           <a {...partner} target="_blank">
           <div className={classes.logo}>
-            <Image {...partner} width={partner.width} height={partner.heigth}/>
+            <img {...partner} width={partner.width} height={partner.heigth}/>
             </div>
           </a>
         </div>

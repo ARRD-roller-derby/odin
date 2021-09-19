@@ -23,7 +23,7 @@ export default function nousRejoindre() {
         </p>
         <ul>
           <li>En septembre</li>
-          <li>Courant février / mars</li>
+          <li>Courant février</li>
         </ul>
         <p>
           Pendant tout le mois de septembre, nos entraînements sont ouverts à

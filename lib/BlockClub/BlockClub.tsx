@@ -1,7 +1,6 @@
 import BlockIndex from "../BlockIndex/BlockIndex";
 import classes from "./BlockClub.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function BlockClub() {
   return (
@@ -23,14 +22,14 @@ export default function BlockClub() {
         </div>
         <div className={classes.img}></div>
         <div className={classes.buttons}>
-        <Link href="/le-roller-derby">
+        <Link href="/association">
           <a className="button">Le club en détail</a>
         </Link>
         </div>
         </div>
         <div className="containerImg">
           <div className="img">
-            <Image
+            <img
               src={`${process.env.NEXT_PUBLIC_URL_BUCKET}pictures/club.webp`}
               width="1192"
               height="672"
