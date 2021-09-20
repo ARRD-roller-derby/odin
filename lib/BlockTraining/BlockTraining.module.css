@@ -28,7 +28,7 @@
 }
 
 .level {
-    color: var(--color-quator);
+  color: var(--color-quator);
 }
 
 .training {
@@ -69,14 +69,18 @@
 }
 
 .address {
-    grid-column: 1/3;
-    text-align: center;
+  grid-column: 1/3;
+  text-align: center;
 }
 
-@media screen and (max-width: 500px){
-    .container {
+.trainingsMobile {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
 
-        font-size: 1.2em;
-      }
-
+@media screen and (max-width: 500px) {
+  .container {
+    font-size: 1.2em;
+  }
 }
