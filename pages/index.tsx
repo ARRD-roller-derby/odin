@@ -26,10 +26,10 @@ export default function Home({ images }: props) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:image" content={img} />
+        <meta property="og:image" content={url + img} />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={title} />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content={description} />
         <meta property="og:type" content="article" />
         <meta property="og:description" content={description} />
@@ -37,7 +37,7 @@ export default function Home({ images }: props) {
         <meta name="twitter:site" content={url} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={img} />
+        <meta name="twitter:image" content={url + img} />
         <meta name="twitter:url" content={url} />
       </Head>
       <div className={styles.title}>
