@@ -8,7 +8,6 @@ export default function BlockTraining() {
     }),
     ismobile = useIsMobile();
 
-    console.log(ismobile)
   return (
     <div className={classes.container} ref={ref} data-inview={inView}>
       <h2 className={classes.title}>

@@ -8,19 +8,28 @@ import BlockClub from "../lib/BlockClub/BlockClub";
 import Footer from "../lib/Footer/Footer";
 import BlockTraining from "../lib/BlockTraining/BlockTraining";
 import JoinButton from "../lib/JoinButton/JoinButton";
+import { useState, useEffect } from 'react';
 
-interface props {
-  images: { mobile: Array<string>; desktop: Array<string> };
-}
-
-export default function Home({ images }: props) {
-  const isMobile = useIsMobile(),
+export default function Home() {
+  const
+    [images, setImages] = useState(null), 
+    isMobile = useIsMobile(),
     title = "Arrd | Association Rouen Roller Derby - Maromme",
     url = "https://arrd.fr",
     img = "/fb.jpg",
     description =
       "L'Association Rouen Roller Derby (ARRD) est une association de loi 1901 née en septembre 2014 en métropole rouennaise, dans le but de pratiquer un sport qui nous passionne alliant plaisir et compétition, pour les femmes et également les hommes.";
-  return (
+ 
+ async function fetchImages(){
+  const {data} = await odin.get(`/api/carroussel`);
+  setImages(data)
+ }
+
+
+ useEffect(()=>{
+   fetchImages()
+ },[])
+      return (
     <div className={styles.container}>
       <Head>
         <title>{title}</title>
@@ -41,7 +50,7 @@ export default function Home({ images }: props) {
         <meta name="twitter:url" content={url} />
       </Head>
       <div className={styles.title}>
-        <Caroussel images={isMobile ? images.mobile : images.desktop} />
+        {images && <Caroussel images={isMobile ? images.mobile : images.desktop} />}
       </div>
       <div className={styles.blocks}>
         <BlockDerby />
@@ -54,17 +63,4 @@ export default function Home({ images }: props) {
       </div>
     </div>
   );
-}
-
-export async function getServerSideProps({ req }) {
-  const baseUrl = `${process.env.NO_SSL ? "http" : "https"}://${
-      req.headers.host
-    }`,
-    { data } = await odin.get(`${baseUrl}/api/carroussel`);
-
-  return {
-    props: {
-      images: data,
-    },
-  };
 }
