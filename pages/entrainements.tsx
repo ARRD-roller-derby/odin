@@ -17,13 +17,23 @@ export default function Entrainements() {
     >
       <section className={classes.container}>
           <article>
-          <h2>Tous niveaux</h2>
-        <h3 className={classes.subtitle}>Vendredi - 19h30 / 22h00</h3>
+          <h2>Entraînements derby tous niveaux</h2>
+        <h3 className={classes.subtitle}>Mercredi - 20h00 / 22h00</h3>
         <h4 className={classes.details}>Pratique du derby</h4>
+        <div className={classes.address}>
+          <p>
+          Stade Paul VAUQUELIN <span className="trash">Salle LESUEUR</span>
+          </p>
+          <p>Rue Ernest DANET</p>
+          <p>première salle sur la gauche</p>
+          <p>
+            76 150 <span className="trash">MAROMME</span>
+          </p>
+        </div>
           </article>
           <article>
         <h3 className={classes.subtitle}>Dimanche - 17h00 / 19h30</h3>
-        <h4 className={classes.details}>Technique de patinage</h4>
+        <h4 className={classes.details}>Pratique du derby</h4>
         <div className={classes.address}>
           <p>
             Gymnase <span className="trash">Jesse OWENS</span>
@@ -37,17 +47,18 @@ export default function Entrainements() {
         </div>
           </article>
           <article>
-          <h2>Confirmé.e.s</h2>
-        <h3 className={classes.subtitle}>Mercredi - 19h45 / 21h45</h3>
-        <h4 className={classes.details}>Pratique du derby</h4>
+          <h2>Cours de patinage</h2>
+        <h3 className={classes.subtitle}>Vendredi - 19h30 / 22h00</h3>
+        <h4 className={classes.details}>Apprentissage du patinage</h4>
         <div className={classes.address}>
           <p>
-          Stade Paul VAUQUELIN <span className="trash">Salle LESUEUR</span>
+            Gymnase <span className="trash">Jesse OWENS</span>
           </p>
-          <p>Rue Ernest DANET</p>
-          <p>première salle sur la gauche</p>
+          <p>Parc de SIGNA</p>
+          <p>Route de Duclair</p>
+          <p>accès à l{`'`}angle de la rue Denis Papin et rue Jacquard</p>
           <p>
-            76 150 <span className="trash">MAROMME</span>
+            76 153 <span className="trash">MAROMME</span>
           </p>
         </div>
           </article>
