@@ -12,7 +12,7 @@ npm run dev
 yarn dev
 ```
 
-à refaire
+A REFAIRE
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
