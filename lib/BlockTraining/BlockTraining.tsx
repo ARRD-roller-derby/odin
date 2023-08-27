@@ -35,7 +35,7 @@ export default function BlockTraining() {
      <div className={classes.address}>
        <div className={classes.level}>Entraînement tous niveaux</div>
        <div className={classes.stadium}>Gymnase Jesse OWENS</div>
-       <div className={classes.street}>rue Denis Papin</div>
+       <div className={classes.street}>Rue Denis Papin</div>
        <div className={classes.details}>Parc de SIGNA</div>
        <div className={classes.city}>76 150 MAROMME</div>
      </div>
@@ -47,7 +47,7 @@ export default function BlockTraining() {
       <div className={classes.address}>
        <div className={classes.level}>Apprentissage du patinage</div>
        <div className={classes.stadium}>Gymnase Jesse OWENS</div>
-       <div className={classes.street}>rue Denis Papin</div>
+       <div className={classes.street}>Rue Denis Papin</div>
        <div className={classes.details}>Parc de SIGNA</div>
        <div className={classes.city}>76 150 MAROMME</div>
      </div>
