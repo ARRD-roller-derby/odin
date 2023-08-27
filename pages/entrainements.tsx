@@ -36,7 +36,7 @@ export default function Entrainements() {
           <p>Parc de SIGNA</p>
           <p>Route de Duclair</p>
           <p>76 150 MAROMME</p>
-          <p>{`(`}accès à l{`'`}angle de la rue Denis Papin et rue Jacquard{`)`}</p>
+          <p>{`(`}accès à l{`'`}angle des rues Denis Papin et Jacquard{`)`}</p>
 
         </div>
           </article>
@@ -49,7 +49,7 @@ export default function Entrainements() {
           <p>Parc de Signa</p>
           <p>Route de Duclair</p>
           <p>76 150 MAROMME</p>
-          <p>{`(`}accès à l{`'`}angle de la rue Denis Papin et rue Jacquard{`)`}</p>
+          <p>{`(`}accès à l{`'`}angle des rues Denis Papin et Jacquard{`)`}</p>
         </div>
           </article>
 
