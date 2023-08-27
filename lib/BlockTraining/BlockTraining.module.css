@@ -28,7 +28,7 @@
 }
 
 .level {
-  color: var(--color-quator);
+  color: var(--color-txt-error);
 }
 
 .training {
@@ -48,7 +48,8 @@
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  color: var(--color-second);
   display: inline-block;
   transform-origin: center center;
   transform: rotate(-1.5deg);
@@ -57,14 +58,14 @@
 
 .day {
   font-size: 2em;
-  color: var(--color-second);
+  color: var(--color-arrd);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
 
 .time {
-  color: var(--color-txt-error);
+  color: var(--color-arrd);
   font-size: 1.5em;
 }
 
