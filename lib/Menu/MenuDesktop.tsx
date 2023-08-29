@@ -6,29 +6,21 @@ export default function MenuDesktop() {
   return (
     <div className={classes.gridDesktop}>
       <div className={classes.linksLeft}>
-        {links.map((link) => {
-          if (link.external) {
-            return (
-              <a
-                key={link.href}
-                className={classes.panelMenuLink}
-                {...link}
-                rel="noreferrer"
-                target="_blank"
-              >
+        {links
+          .filter((it) => it.side === 'right')
+          .map((link) =>
+            link.target === '_blank' ? (
+              <a key={link.title} {...link}>
                 {link.title}
               </a>
-            )
-          } else {
-            return (
+            ) : (
               <Link {...link} key={link.title}>
                 <span className={classes.panelMenuLink} title={link.title}>
                   {link.title}
                 </span>
               </Link>
             )
-          }
-        })}
+          )}
       </div>
       <div className={classes.logos}>
         <Link href="/">

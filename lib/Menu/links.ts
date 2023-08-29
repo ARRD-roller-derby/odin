@@ -1,34 +1,35 @@
 export const links = [
   {
     title: "L'association",
-    href: "association",
-    side: "right",
+    href: 'association',
+    side: 'right',
   },
   {
-    title: "Les entraînements",
-    href: "entrainements",
-    side: "right",
+    title: 'Les entraînements',
+    href: 'entrainements',
+    side: 'right',
   },
   {
-    title: "Nous rejoindre",
-    href: "nous-rejoindre",
-    side: "right",
+    title: 'Nous rejoindre',
+    href: 'nous-rejoindre',
+    side: 'right',
   },
 
   {
-    title: "Le roller derby",
-    href: "roller-derby",
-    side: "left",
+    title: 'Le roller derby',
+    href: 'roller-derby',
+    side: 'left',
   },
   {
-    title: "Les minimums skills",
-    href: "ms",
-    side: "left",
+    title: 'Les minimums skills',
+    href: 'ms',
+    side: 'left',
   },
   {
-    title: "Actualités",
-    href: "https://www.facebook.com/ARRD76",
-    side: "left",
+    title: 'Actualités',
+    href: 'https://www.facebook.com/ARRD76',
+    target: '_blank',
+    side: 'left',
     external: true,
   },
-];
+]
