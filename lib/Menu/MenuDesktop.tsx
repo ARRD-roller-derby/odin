@@ -8,11 +8,19 @@ export default function MenuDesktop() {
       <div className={classes.linksLeft}>
         {links
           .filter((it) => it.side === 'right')
-          .map((link) => (
-            <Link {...link} key={link.title}>
-              {link.title}
-            </Link>
-          ))}
+          .map((link) =>
+            link.target === '_blank' ? (
+              <a key={link.title} {...link}>
+                {link.title}
+              </a>
+            ) : (
+              <Link {...link} key={link.title}>
+                <span className={classes.panelMenuLink} title={link.title}>
+                  {link.title}
+                </span>
+              </Link>
+            )
+          )}
       </div>
       <div className={classes.logos}>
         <Link href="/">
