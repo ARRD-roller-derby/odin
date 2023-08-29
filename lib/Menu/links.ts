@@ -27,8 +27,7 @@ export const links = [
   },
   {
     title: "Actualités",
-    href: "https://www.facebook.com/ARRD76",
-    target: "_blank"
+    href: "actu",
     side: "left",
   },
 ];
