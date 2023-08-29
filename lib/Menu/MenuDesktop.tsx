@@ -9,14 +9,8 @@ export default function MenuDesktop() {
         {links
           .filter((it) => it.side === "right")
           .map((link) => (
-            link.target === "_blank" ? <a key={link.title} {...link}>{link.title}</a>: <Link {...link} key={link.title}>
-            <a
-                className={classes.panelMenuLink}
-                title={link.title}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.title}
-              </a>
+            <Link {...link} key={link.title}>
+              <a>{link.title}</a>
             </Link>
           ))}
       </div>

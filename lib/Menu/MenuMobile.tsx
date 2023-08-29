@@ -23,7 +23,7 @@ export default function MenuMobile({fixed=false}: {fixed?: boolean}) {
             </a>
           </Link>
           {links.map((link) => (
-            <Link {...link} key={link.title}>
+           <Link {...link} key={link.title}>
               <a
                 className={classes.panelMenuLink}
                 title={link.title}
