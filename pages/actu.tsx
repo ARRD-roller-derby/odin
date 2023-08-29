@@ -1,12 +1,8 @@
 import LayoutPage from "../lib/LayoutPage/LayoutPage";
 import classes from "./../styles/Page.module.css";
 import odin from "../utils/odin";
-import { fbArticleInterface } from '../utils/interfaces';
-import dayjs from "dayjs"
 
-export default function Actu({articles}: {articles: Array<fbArticleInterface>}) {
-
-
+export default function Actu() {
   return (
     <LayoutPage
       title="Actualité"
@@ -14,25 +10,11 @@ export default function Actu({articles}: {articles: Array<fbArticleInterface>}) 
       img="/rd_explain.webp"
     >
       <section className={classes.fbArticles}>
-       {articles.map((article: fbArticleInterface)=><article key={article.message} className={classes.fbArticle}>
-           <p className={classes.date}>{dayjs(article.created_time).fromNow()}</p>
-       <p dangerouslySetInnerHTML={{ __html: article.message }}/>
-       </article>)}
+        <a href="https://www.facebook.com/ARRD76" target="_blank" rel="noreferrer">
+          Actualités
+        </a>
       </section>
     </LayoutPage>
   );
 }
-
-export async function getServerSideProps({ req }) {
-    const baseUrl = `${process.env.NO_SSL ? "http" : "https"}://${
-        req.headers.host
-      }`,
-      { data } = await odin.get(`${baseUrl}/api/actu`);
-  
-    return {
-      props: {
-        articles: data.articles,
-      },
-    };
-  }
   
