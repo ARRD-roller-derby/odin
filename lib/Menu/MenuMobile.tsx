@@ -39,13 +39,13 @@ export default function MenuMobile({ fixed = false }: { fixed?: boolean }) {
             } else {
               return (
                 <Link {...link} key={link.title}>
-                  <a
+                  <span
                     className={classes.panelMenuLink}
                     title={link.title}
                     onClick={() => setIsOpen(false)}
                   >
                     {link.title}
-                  </a>
+                  </span>
                 </Link>
               )
             }
