@@ -28,6 +28,7 @@ export const links = [
   {
     title: "Actualités",
     href: "actu",
+    target: "_blank",
     side: "left",
   },
 ];
