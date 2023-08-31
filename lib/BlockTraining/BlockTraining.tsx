@@ -43,7 +43,7 @@ export default function BlockTraining() {
     <h2 className={classes.title}>Cours de patin</h2>
     <div className={classes.training}>
       <div className={classes.day}>Vendredi</div>
-      <div className={classes.time}>19h30 - 22h00</div>
+      <div className={classes.time}>19h30 - 21h30</div>
       <div className={classes.address}>
        <div className={classes.level}>Apprentissage du patinage</div>
        <div className={classes.stadium}>Gymnase Jesse OWENS</div>

@@ -22,17 +22,34 @@ export default function MenuMobile({ fixed = false }: { fixed?: boolean }) {
               Accueil
             </a>
           </Link>
-          {links.map((link) => (
-            <Link {...link} key={link.title}>
-              <span
-                className={classes.panelMenuLink}
-                title={link.title}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.title}
-              </span>
-            </Link>
-          ))}
+          {links.map((link) => {
+            if (link.external) {
+              return (
+                <a
+                  key={link.href}
+                  className={classes.panelMenuLink}
+                  {...link}
+                  rel="noreferrer"
+                  target="_blank"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.title}
+                </a>
+              )
+            } else {
+              return (
+                <Link {...link} key={link.title}>
+                  <a
+                    className={classes.panelMenuLink}
+                    title={link.title}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.title}
+                  </a>
+                </Link>
+              )
+            }
+          })}
         </div>
       </div>
       <div className={classes.containerMobile} data-fixed={fixed}>
