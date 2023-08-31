@@ -14,7 +14,6 @@ export default function MenuDesktop() {
           {...link}
           rel="noreferrer"
           target="_blank"
-          onClick={() => setIsOpen(false)}
         >
           {link.title}
         </a>
@@ -24,7 +23,6 @@ export default function MenuDesktop() {
         <a
           className={classes.panelMenuLink}
           title={link.title}
-          onClick={() => setIsOpen(false)}
         >
                   {link.title}
         </a>
@@ -61,7 +59,6 @@ export default function MenuDesktop() {
           {...link}
           rel="noreferrer"
           target="_blank"
-          onClick={() => setIsOpen(false)}
         >
           {link.title}
         </a>
@@ -71,7 +68,6 @@ export default function MenuDesktop() {
         <a
           className={classes.panelMenuLink}
           title={link.title}
-          onClick={() => setIsOpen(false)}
         >
                   {link.title}
         </a>
