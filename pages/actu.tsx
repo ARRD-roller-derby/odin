@@ -10,11 +10,25 @@ export default function Actu() {
       img="/rd_explain.webp"
     >
       <section className={classes.fbArticles}>
-        <a href="https://www.facebook.com/ARRD76" target="_blank" rel="noreferrer">
-          Actualités
-        </a>
+       {articles.map((article: fbArticleInterface)=><article key={article.message} className={classes.fbArticle}>
+           <p className={classes.date}>{dayjs(article.created_time).fromNow()}</p>
+       <p dangerouslySetInnerHTML={{ __html: article.message }}/>
+       </article>)}
       </section>
     </LayoutPage>
   );
 }
+
+export async function getServerSideProps({ req }) {
+    const baseUrl = `${process.env.NO_SSL ? "http" : "https"}://${
+        req.headers.host
+      }`,
+      { data } = await odin.get(`${baseUrl}/api/actu`);
+  
+    return {
+      props: {
+        articles: data.articles,
+      },
+    };
+  }
   

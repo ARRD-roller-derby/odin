@@ -6,13 +6,31 @@ export default function MenuDesktop() {
   return (
     <div className={classes.gridDesktop}>
       <div className={classes.linksLeft}>
-        {links
-          .filter((it) => it.side === "right")
-          .map((link) => (
-            <Link {...link} key={link.title}>
-              <a>{link.title}</a>
-            </Link>
-          ))}
+      {links.map((link) => {
+      if(link.external) {
+      return ( 
+        <a
+          className={classes.panelMenuLink}
+          {...link}
+          rel="noreferrer"
+          target="_blank"
+          onClick={() => setIsOpen(false)}
+        >
+          {link.title}
+        </a>
+      )
+      } else {
+      return ( <Link {...link} key={link.title}>
+        <a
+          className={classes.panelMenuLink}
+          title={link.title}
+          onClick={() => setIsOpen(false)}
+        >
+                  {link.title}
+        </a>
+        </Link> )
+      }
+      })}
       </div>
       <div className={classes.logos}>
         <Link href="/">
@@ -35,13 +53,31 @@ export default function MenuDesktop() {
         </Link>
       </div>
       <div className={classes.linksRight}>
-        {links
-          .filter((it) => it.side === "left")
-          .map((link) => (
-            <Link {...link} key={link.title}>
-              <a>{link.title}</a>
-            </Link>
-          ))}
+      {links.map((link) => {
+      if(link.external) {
+      return ( 
+        <a
+          className={classes.panelMenuLink}
+          {...link}
+          rel="noreferrer"
+          target="_blank"
+          onClick={() => setIsOpen(false)}
+        >
+          {link.title}
+        </a>
+      )
+      } else {
+      return ( <Link {...link} key={link.title}>
+        <a
+          className={classes.panelMenuLink}
+          title={link.title}
+          onClick={() => setIsOpen(false)}
+        >
+                  {link.title}
+        </a>
+        </Link> )
+      }
+      })}
       </div>
     </div>
   );
