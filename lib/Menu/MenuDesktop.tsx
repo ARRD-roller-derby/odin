@@ -43,27 +43,31 @@ export default function MenuDesktop() {
         </Link>
       </div>
       <div className={classes.linksRight}>
-        {links.map((link) => {
-          if (link.external) {
-            return (
-              <a
-                key={link.href}
-                className={classes.panelMenuLink}
-                {...link}
-                rel="noreferrer"
-                target="_blank"
-              >
-                {link.title}
-              </a>
-            )
-          } else {
-            return (
-              <Link {...link} key={link.title}>
-                <span className={classes.panelMenuLink}>{link.title}</span>
-              </Link>
-            )
-          }
-        })}
+        {links
+          .filter((it) => it.side === 'left')
+          .map((link) => {
+            if (link.external) {
+              return (
+                <a
+                  key={link.title}
+                  className={classes.panelMenuLink}
+                  {...link}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {link.title}
+                </a>
+              )
+            } else {
+              return (
+                <Link {...link} key={link.title}>
+                  <span className={classes.panelMenuLink} title={link.title}>
+                    {link.title}
+                  </span>
+                </Link>
+              )
+            }
+          })}
       </div>
     </div>
   )
