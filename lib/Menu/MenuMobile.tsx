@@ -1,12 +1,12 @@
-import ArrowBottom from "../ArrowBottom/ArrowBottom";
-import Hamburger from "../Hamburger/Hamburger";
-import classes from "./menu.module.css";
-import { useState } from "react";
-import { links } from "./links";
-import Link from "next/link";
+import ArrowBottom from '../ArrowBottom/ArrowBottom'
+import Hamburger from '../Hamburger/Hamburger'
+import classes from './menu.module.css'
+import { useState } from 'react'
+import { links } from './links'
+import Link from 'next/link'
 
-export default function MenuMobile({fixed=false}: {fixed?: boolean}) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function MenuMobile({ fixed = false }: { fixed?: boolean }) {
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div className={classes.mobile}>
@@ -24,19 +24,19 @@ export default function MenuMobile({fixed=false}: {fixed?: boolean}) {
           </Link>
           {links.map((link) => (
             <Link {...link} key={link.title}>
-              <a
+              <span
                 className={classes.panelMenuLink}
                 title={link.title}
                 onClick={() => setIsOpen(false)}
               >
                 {link.title}
-              </a>
+              </span>
             </Link>
           ))}
         </div>
       </div>
       <div className={classes.containerMobile} data-fixed={fixed}>
-        <div className={classes.logosMobileContainer} >
+        <div className={classes.logosMobileContainer}>
           <div className={classes.logosMobile}>
             <Link href="/">
               <img
@@ -58,8 +58,8 @@ export default function MenuMobile({fixed=false}: {fixed?: boolean}) {
             </Link>
           </div>
         </div>
-       {!fixed && <ArrowBottom />} 
+        {!fixed && <ArrowBottom />}
       </div>
     </div>
-  );
+  )
 }

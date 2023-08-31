@@ -1,16 +1,16 @@
-import classes from "./menu.module.css";
-import Link from "next/link";
-import { links } from "./links";
+import classes from './menu.module.css'
+import Link from 'next/link'
+import { links } from './links'
 
 export default function MenuDesktop() {
   return (
     <div className={classes.gridDesktop}>
       <div className={classes.linksLeft}>
         {links
-          .filter((it) => it.side === "right")
+          .filter((it) => it.side === 'right')
           .map((link) => (
             <Link {...link} key={link.title}>
-              <a>{link.title}</a>
+              {link.title}
             </Link>
           ))}
       </div>
@@ -36,13 +36,13 @@ export default function MenuDesktop() {
       </div>
       <div className={classes.linksRight}>
         {links
-          .filter((it) => it.side === "left")
+          .filter((it) => it.side === 'left')
           .map((link) => (
             <Link {...link} key={link.title}>
-              <a>{link.title}</a>
+              {link.title}
             </Link>
           ))}
       </div>
     </div>
-  );
+  )
 }
