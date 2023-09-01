@@ -14,10 +14,12 @@ export default function MenuDesktop() {
                 {link.title}
               </a>
             ) : (
-              <Link {...link} key={link.title}>
-                <span className={classes.panelMenuLink} title={link.title}>
-                  {link.title}
-                </span>
+              <Link
+                {...link}
+                key={link.title}
+                className={classes.panelMenuLink}
+              >
+                {link.title}
               </Link>
             )
           )}
@@ -60,10 +62,12 @@ export default function MenuDesktop() {
               )
             } else {
               return (
-                <Link {...link} key={link.title}>
-                  <span className={classes.panelMenuLink} title={link.title}>
-                    {link.title}
-                  </span>
+                <Link
+                  {...link}
+                  key={link.title}
+                  className={classes.panelMenuLink}
+                >
+                  {link.title}
                 </Link>
               )
             }
