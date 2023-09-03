@@ -60,6 +60,12 @@ h2 {
   font-family: "Londrina Solid", cursive;
 }
 
+.highl {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--color-arrd);
+}
+
 .button {
   text-decoration: none;
   background: var(--color-second);
