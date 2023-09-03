@@ -177,9 +177,7 @@
 .panelMenuLink {
   font-size: 2em;
   text-decoration: none;
-  font-weight: bold;
   color: var(--color-arrd);
-  text-shadow: 3px 3px 0 var(--color-tierce);
 }
 
 @keyframes containerDesktop {
