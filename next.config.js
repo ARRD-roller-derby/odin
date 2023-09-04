@@ -1,6 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
   images: {
-    domains: [process.env.S3_DOMAIN],
-  }
+    domains: ['arrd.s3.fr-par.scw.cloud'],
+  },
 }
