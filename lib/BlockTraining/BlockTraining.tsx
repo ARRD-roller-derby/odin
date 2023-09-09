@@ -57,7 +57,7 @@ export default function BlockTraining() {
           <div className={classes.trainings}>
           <div className={classes.day}>Vendredi</div>
           <div className={classes.day}>Dimanche</div>
-          <div className={classes.time}>19h30 - 22h00</div>
+          <div className={classes.time}>19h30 - 21h30</div>
           <div className={classes.time}>17h00 - 19h30</div>
           <div className={classes.address}>
             <div className={classes.level}>Ouvert à tous</div>
