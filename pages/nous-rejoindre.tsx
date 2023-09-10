@@ -12,31 +12,39 @@ export default function nousRejoindre() {
         <h2>Comment nous rejoindre ?</h2>
         <p>
           L’association recrute très volontiers de nouvelles personnes, à partir
-          de <span className="trash">16 ans</span>, pour grossir les rangs de
-          ses équipes <span className="trash">féminines et masculines</span>.
+          de <span className="highl">16 ans</span>, pour grossir les rangs de
+          ses équipes <span className="highl">féminines et masculines</span>.
         </p>
         <p>Nous recrutons aussi des NSO ou arbitres.</p>
         <p>Si ce sport t’intéresse, n’hésite surtout pas à nous rejoindre !</p>
         <p>
           Nous accueillons les nouvelles recrues{" "}
-          <span className="trash">deux fois dans l’année</span> :
+          <span className="highl">deux fois dans l’année:</span>
         </p>
         <ul>
           <li>En septembre</li>
           <li>Courant février</li>
         </ul>
         <p>
-          Pendant tout le mois de septembre, nos entraînements sont ouverts à
-          celles et ceux qui voudraient essayer en vue de s’inscrire.
+          Pendant tout le mois de septembre, nos entraînements du <span className="highl"> dimanche (derby)</span> et du 
+          <span className="highl"> vendredi (cours de patin)</span> sont ouverts à celles et ceux qui voudraient essayer en vue 
+          de s’inscrire.
+        </p>
+        <p>
+          <a href= "https://forms.gle/K6sMnoiVNgGusTMz8" target = '_blank'>FORMULAIRE INSCRIPTION ESSAIS ET RECRUTEMENT - 
+          Roller Derby</a>
+        </p>
+        <p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScgl-u_kJAx1Tb2duAIUpwic2iJ0avjYcpkwZH6AaXuDRI3uA/viewform" target = '_blank'>
+            FORMULAIRE INSCRIPTION Cours de patin - Essais et pré-inscription</a>
         </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
           Pas besoin d’être un.e as du patin pour nous rejoindre,{" "}
-          <span className="trash">tous les niveaux sont les bienvenus</span>.
+          <span className="highl">tous les niveaux sont les bienvenus</span>.
         </p>
         <p>
-          Néanmoins, il est préférable de tenir à peu près debout sur des
-          roulettes OU, a minima, de ne pas avoir trop “peur” de vous lancer ;-)
+          Les <span className="highl"> cours de patin</span> du vendredi sont là pour ça.
         </p>
         <h2>Quel est le processus de recrutement ?</h2>
         <p>Venir à notre rencontre lors d’une session de découverte.</p>
@@ -47,24 +55,24 @@ export default function nousRejoindre() {
         <p>
           Ces moments ouverts à tous sur inscription sont l’occasion de
           découvrir les bases du roller derby, de chausser des patins{" "}
-          <span className="trash">(on prête le matériel)</span> … Et de voir si
+          <span className="highl">(on prête le matériel)</span> … Et de voir si
           vous vous sentez bien en notre compagnie (c’est important pour un
           sport d’équipe !).
         </p>
-        <p className="trash">
+        <p className="highl">
           Pour connaître les dates des sessions de découverte, rendez-vous sur
           notre page Facebook ou dans la section “Actualités” du site.
         </p>
         <h2>Profitez de 3 entraînements d’essai gratuits</h2>
         <p>
           En septembre seulement, vous pouvez “tester” le roller derby
-          gratuitement, lors de <span className="trash">3 entraînements</span>.
+          gratuitement, lors de <span className="highl">3 entraînements</span>.
         </p>
         <p>Vous pourrez ensuite décider de vous inscrire … ou non ! ;-)</p>
         <h2>Inscrivez-vous</h2>
         <p>
-          Sur prise de contact, nous vous fournissons le dossier d’inscription à
-          l’asso.
+          Sur prise de contact à <a href = "mailto: contact.arrd@gmail.com? subject=notre adresse mail">contact.arrd@gmail.com</a>
+           , nous vous fournissons le dossier d’inscription à l’asso.
         </p>
         <p>
           Un certificat médical autorisant la pratique du roller derby en
@@ -72,8 +80,9 @@ export default function nousRejoindre() {
         </p>
         <p>
           Le montant de l’adhésion est de{" "}
-          <span className="trash">80 € tout inclus</span>.
+          <span className="highl">80 € tout inclus</span> pour le derby.
         </p>
+        <p>Et de <span className="highl"> 50€ par trimestre</span> pour les cours de patin.</p>
         <h2>Equipez-vous !</h2>
         <p>C’est un aspect important de ce sport !</p>
         <p>
