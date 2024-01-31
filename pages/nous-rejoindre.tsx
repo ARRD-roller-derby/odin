@@ -23,19 +23,18 @@ export default function nousRejoindre() {
         </p>
         <ul>
           <li>En septembre</li>
-          <li>Courant février</li>
+          <li>En ce moment</li>
         </ul>
         <p>
-          Pendant tout le mois de septembre, nos entraînements du <span className="highl"> dimanche (derby)</span> et du 
-          <span className="highl"> vendredi (cours de patin)</span> sont ouverts à celles et ceux qui voudraient essayer en vue 
+          En ce moment, nos entraînements du <span className="highl"> dimanche (derby)</span> sont ouverts à celles et ceux qui voudraient essayer en vue 
           de s’inscrire.
         </p>
         <p>
-          <a href= "https://forms.gle/K6sMnoiVNgGusTMz8" target = '_blank'>FORMULAIRE INSCRIPTION ESSAIS ET RECRUTEMENT - 
+          <a href= "https://forms.gle/tCP1rX8dxH13wvg79" target = '_blank'>FORMULAIRE INSCRIPTION ESSAIS ET RECRUTEMENT DE MI-SAISON - 
           Roller Derby</a>
         </p>
         <p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScgl-u_kJAx1Tb2duAIUpwic2iJ0avjYcpkwZH6AaXuDRI3uA/viewform" target = '_blank'>
+          <a href="https://rb.gy/70z6g" target = '_blank'>
             FORMULAIRE INSCRIPTION Cours de patin - Essais et pré-inscription</a>
         </p>
         <h2>Quel niveau est attendu ?</h2>
