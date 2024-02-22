@@ -1,15 +1,16 @@
-import Head from "next/head";
-import classes from "./LayoutPage.module.css";
-import { ReactChild } from "react";
-import Footer from "../Footer/Footer";
-import Menu from '../Menu/Menu';
-import { useRouter } from "next/dist/client/router";
+import Head from 'next/head'
+import classes from './LayoutPage.module.css'
+import { ReactChild } from 'react'
+import Footer from '../Footer/Footer'
+import Menu from '../Menu/Menu'
+import { useRouter } from 'next/dist/client/router'
+import Script from 'next/script'
 
 interface layoutInterface {
-  children: ReactChild;
-  title: string;
-  description: string;
-  img: string;
+  children: ReactChild
+  title: string
+  description: string
+  img: string
 }
 
 export default function LayoutPage({
@@ -18,10 +19,15 @@ export default function LayoutPage({
   description,
   img,
 }: layoutInterface) {
-    const {asPath} = useRouter(),
-    url = `https://arrd.fr${asPath}`;
+  const { asPath } = useRouter(),
+    url = `https://arrd.fr${asPath}`
   return (
-    <section className={classes.container}       style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_URL_BUCKET}/pictures${img})` }}>
+    <section
+      className={classes.container}
+      style={{
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_URL_BUCKET}/pictures${img})`,
+      }}
+    >
       <Head>
         <title>{title} | Association Rouen Roller Derby - Maromme</title>
         <meta name="description" content={description} />
@@ -40,22 +46,19 @@ export default function LayoutPage({
         <meta name="twitter:image" content={img} />
         <meta name="twitter:url" content={url} />
       </Head>
-      <header
-        className={classes.header}
-  
-      >
+      <header className={classes.header}>
         <h1 className={classes.title}>{title}</h1>
-        <Menu fixed/>
+        <Menu fixed />
       </header>
       <main className={classes.main}>
-
-          <article className={classes.article}>
-          {children}
-          </article>
+        <article className={classes.article}>{children}</article>
       </main>
       <footer>
         <Footer />
+        <Script id="Glyph">
+          {`window.GLYPH_WEBSITE_ID='f10d7ce0-7f7b-4143-9c33-792c2b1fba92';(function(){d=document;s=d.createElement("script"); s.src="https://widget.glyph.chat/g.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`}
+        </Script>
       </footer>
     </section>
-  );
+  )
 }
