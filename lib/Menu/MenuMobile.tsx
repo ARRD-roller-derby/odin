@@ -14,13 +14,13 @@ export default function MenuMobile({ fixed = false }: { fixed?: boolean }) {
       <div className={classes.panelMenu} data-isopen={isOpen}>
         <div className={classes.panelMenuLinks}>
           <Link href="/">
-            <a
+            <span
               className={classes.panelMenuLink}
               title="accueil"
               onClick={() => setIsOpen(false)}
             >
               Accueil
-            </a>
+            </span>
           </Link>
           {links.map((link) => {
             if (link.external) {
