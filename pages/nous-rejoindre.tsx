@@ -31,7 +31,7 @@ export default function nousRejoindre() {
         </p>
         <p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAiQdRxTYA4gQeGBvSj_lvNP4MITdzcZObn-2mXIi1nO_IHQ/viewform?usp=sf_link" target = '_blank'>
-            Je m'inscris aux essais des cours de patins</a>
+            Je m’inscris aux essais des cours de patins</a>
         </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
