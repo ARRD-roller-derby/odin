@@ -13,9 +13,9 @@ export default function nousRejoindre() {
         <p>
           L’association recrute très volontiers de nouvelles personnes, à partir
           de <span className="highl">16 ans</span>, pour grossir les rangs de
-          ses équipes <span className="highl">féminines et masculines</span>.
+          son <span className="highl">équipe mixte</span>.
         </p>
-        <p>Nous recrutons aussi des NSO ou arbitres.</p>
+        <p>Nous recrutons aussi des gens pour arbitrer.</p>
         <p>Si ce sport t’intéresse, n’hésite surtout pas à nous rejoindre !</p>
         <p>
           Nous accueillons les nouvelles recrues{" "}
@@ -23,19 +23,15 @@ export default function nousRejoindre() {
         </p>
         <ul>
           <li>En septembre</li>
-          <li>En ce moment</li>
+          <li>En janvier / février</li>
         </ul>
         <p>
-          En ce moment, nos entraînements du <span className="highl"> dimanche (derby)</span> sont ouverts à celles et ceux qui voudraient essayer en vue 
-          de s’inscrire.
+        Les vendredis 22 et 29 mars de 19h30 à 21h30 <span className="highl"> les cours de patin</span> sont ouverts à celles et ceux qui voudraient essayer en vue 
+          de s’inscrire pour le trimestre.
         </p>
         <p>
-          <a href= "https://forms.gle/tCP1rX8dxH13wvg79" target = '_blank'>FORMULAIRE INSCRIPTION ESSAIS ET RECRUTEMENT DE MI-SAISON - 
-          Roller Derby</a>
-        </p>
-        <p>
-          <a href="https://rb.gy/70z6g" target = '_blank'>
-            FORMULAIRE INSCRIPTION Cours de patin - Essais et pré-inscription</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAiQdRxTYA4gQeGBvSj_lvNP4MITdzcZObn-2mXIi1nO_IHQ/viewform?usp=sf_link" target = '_blank'>
+            Je m'inscris aux essais des cours de patins</a>
         </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
