@@ -26,12 +26,20 @@ export default function nousRejoindre() {
           <li>En janvier / février</li>
         </ul>
         <p>
-        Les vendredis 22 et 29 mars de 19h30 à 21h30 <span className="highl"> les cours de patin</span> sont ouverts à celles et ceux qui voudraient essayer en vue 
-          de s’inscrire pour le trimestre.
+        Venez découvrir le <span className="highl"> Roller Derby </span>lors des<span className="highl"> stages d’été</span> les dimanches 21 et 28 juillet de 16h30 à 19h30.
         </p>
         <p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAiQdRxTYA4gQeGBvSj_lvNP4MITdzcZObn-2mXIi1nO_IHQ/viewform?usp=sf_link" target = '_blank'>
-            Je m’inscris aux essais des cours de patins</a>
+          Au programme:
+        </p>
+        <ul>
+          <li>ℹ️ Présentation du roller derby et de l’association ARRD-Maromme</li>
+          <li>🧦 Sock derby (initiation sans patin)</li>
+          <li>🛼 Essai de patinage (accompagné·e)</li>
+          <li>🔥 Essai Roller Derby</li>
+        </ul>
+        <p style={{textAlign:'center'}}>
+          <a href="https://forms.gle/2sphHKdP1GNWo6p17" target = '_blank' >
+            Je m’inscris aux stages d’été</a>
         </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
@@ -56,7 +64,7 @@ export default function nousRejoindre() {
         </p>
         <p className="highl">
           Pour connaître les dates des sessions de découverte, rendez-vous sur
-          notre page Facebook ou dans la section “Actualités” du site.
+          notre page Facebook dans la section “Actualités” du site.
         </p>
         <h2>Profitez de 3 entraînements d’essai gratuits</h2>
         <p>
@@ -91,13 +99,6 @@ export default function nousRejoindre() {
           <li>protège-genoux</li>
           <li>protège-dents</li>
         </ul>
-        <p>
-          Pour cela, direction{" "}
-          <a href="https://www.makadamshop.fr/" target="_blank" rel="noreferrer">
-            Makadam Shop
-          </a>
-          , la référence à Rouen.
-        </p>
         <p>
           Et puis n’hésitez pas à demander conseil à vos nouveaux / nouvelles
           coéquipièr.e.s !

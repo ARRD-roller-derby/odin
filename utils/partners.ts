@@ -15,11 +15,4 @@ export const partners: Array<partnersInterface> = [
     width: 150,
     heigth: 150,
   },
-  {
-    title: "Makadam",
-    href: "https://www.makadamshop.fr/",
-    src: url + "/makadam_logo.webp",
-    width: 150,
-    heigth: 150,
-  },
 ];
