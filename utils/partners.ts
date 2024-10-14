@@ -15,4 +15,11 @@ export const partners: Array<partnersInterface> = [
     width: 150,
     heigth: 150,
   },
+  {
+    title: "FDVA",
+    href: "https://associations.gouv.fr/FDVA.html",
+    src: url + "/fdva.webp",
+    width: 150,
+    heigth: 150,
+  },
 ];

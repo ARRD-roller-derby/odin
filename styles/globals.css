@@ -110,6 +110,12 @@ p a, li a {
   font-size: 1.3rem;
 }
 
+
+.ProseMirror > p {
+  font-size: 1em !important;
+  margin: 1.1em 0 !important;
+}
+
 @media screen and (max-width: 500px) {
 
   p {

@@ -21,8 +21,8 @@ export const links = [
     side: 'left',
   },
   {
-    title: 'Les minimums skills',
-    href: 'ms',
+    title: 'Évènements',
+    href: 'events',
     side: 'left',
   },
   {
