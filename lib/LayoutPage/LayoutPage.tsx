@@ -17,7 +17,7 @@ export default function LayoutPage({
   children,
   title,
   description,
-  img,
+  img: img_,
 }: layoutInterface) {
   const { asPath } = useRouter(),
     url = `https://arrd.fr${asPath}`
@@ -25,11 +25,12 @@ export default function LayoutPage({
    const imgDefault = '/fb.jpg',
     descriptionDefault =
       "L'Association Rouen Roller Derby (ARRD) est une association de loi 1901 née en septembre 2014 en métropole rouennaise, dans le but de pratiquer un sport qui nous passionne alliant plaisir et compétition, pour les femmes et également les hommes."
+      const img = img_ || imgDefault
   return (
     <section
       className={classes.container}
       style={{
-        backgroundImage: `url(${process.env.NEXT_PUBLIC_URL_BUCKET}/pictures${img || imgDefault})`,
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_URL_BUCKET}/pictures${img})`,
       }}
     >
       <Head>
