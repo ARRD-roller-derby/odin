@@ -6,7 +6,6 @@ export default function RollerDerby() {
     <LayoutPage
       title="Le Roller Derby"
       description="Né d’une idée germée aux Etats-Unis au début des années 30, le Roller Derby est un sport à part entière depuis 1937."
-      img="/rd.webp"
     >
       <div className="container">
         <h2>Un peu d’histoire</h2>
@@ -22,7 +21,7 @@ export default function RollerDerby() {
         </p>
         <p>En décembre 2010, la Fédération internationale de roller sports, une filiale du Comité international olympique, reconnait le 
           roller derby comme un sport légitime.</p>
-      <h2>Un sport cadré qui mobilise du monde​</h2>
+      <h2>Un sport cadré qui mobilise du monde </h2>
       <p><span className="highl">Pas moins de 20 arbitres</span> (7 sur roulettes et 13 NSO, non skating offical) sont là pour s’assurer 
       du respect des règles et distribuer des pénalités aux joueuses dans le cas contraire.</p>
       <p>Car malgré l’engagement et l’énergie que les joueuses mettent à l’ouvrage, le Roller Derby c’est bigrement musclé, les chutes 

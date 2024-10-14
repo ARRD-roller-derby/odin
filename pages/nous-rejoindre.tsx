@@ -6,7 +6,6 @@ export default function nousRejoindre() {
       title="Nous rejoindre"
       description="L’association recrute très volontiers de nouvelles personnes, à partir de 16 ans, pour grossir les rangs de ses équipes féminines et masculines.
       Nous recrutons aussi des NSO ou arbitres."
-      img="/join.webp"
     >
       <div className="container">
         <h2>Comment nous rejoindre ?</h2>

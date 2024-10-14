@@ -13,7 +13,6 @@ export default function Entrainements() {
     <LayoutPage
       title="Les entraînements"
       description="Consultez les informations liées à nos sessions d'entraînement"
-      img="/training.webp"
     >
       <section className={classes.container}>
           <article>
