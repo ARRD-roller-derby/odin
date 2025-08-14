@@ -15,10 +15,10 @@ export default function BlockTraining() {
         <div className={classes.training}>
           <div className={classes.day}>Mercredi</div>
           <div className={classes.time}>
-            <div>Roller derby</div>20h00 - 22h00
+            <div>Roller derby</div>19h45 - 22h00
           </div>
           <div className={classes.address}>
-            <div className={classes.level}>Entraînement tous niveaux</div>
+            <div className={classes.level}>Entraînement Rookie / Inter / Advanced</div>
             <div className={classes.stadium}>
               Salle LESUEUR - Stade Paul VAUQUELIN
             </div>
@@ -34,22 +34,22 @@ export default function BlockTraining() {
             <div className={classes.training}>
               <div className={classes.day}>Dimanche</div>
               <div className={classes.time}>
-                <div>Roller derby</div>17h00 - 19h30
+                <div>Cours de patin / Derbyschool</div>17h00 - 19h30
               </div>
               <div className={classes.address}>
-                <div className={classes.level}>Entraînement tous niveaux</div>
+                <div className={classes.level}>Tous niveaux</div>
                 <div className={classes.stadium}>Gymnase Jesse OWENS</div>
                 <div className={classes.street}>Rue Denis Papin</div>
                 <div className={classes.details}>Parc de SIGNA</div>
                 <div className={classes.city}>76 150 MAROMME</div>
               </div>
             </div>
-            <h2 className={classes.title}>Cours de patin</h2>
+            <h2 className={classes.title}>Roller derby</h2>
             <div className={classes.training}>
               <div className={classes.day}>Vendredi</div>
-              <div className={classes.time}>19h30 - 21h30</div>
+              <div className={classes.time}>19h30 - 22h00</div>
               <div className={classes.address}>
-                <div className={classes.level}>Apprentissage du patinage</div>
+                <div className={classes.level}>Entraînement Rookie / Inter / Advanced</div>
                 <div className={classes.stadium}>Gymnase Jesse OWENS</div>
                 <div className={classes.street}>Rue Denis Papin</div>
                 <div className={classes.details}>Parc de SIGNA</div>
@@ -63,11 +63,11 @@ export default function BlockTraining() {
 
             <div className={classes.day}>Dimanche</div>
             <div className={classes.time}>
-              <div>Cours de patin</div>
-              19h30 - 21h30
+              <div>Roller derby</div>
+              19h30 - 22h00
             </div>
             <div className={classes.time}>
-              <div>Roller derby</div>17h00 - 19h30
+              <div>Cours de patin / Derbyschool</div>17h00 - 19h30
             </div>
             <div className={classes.address}>
               <div className={classes.level}>Ouvert à tous</div>
