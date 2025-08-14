@@ -26,7 +26,7 @@ export default function nousRejoindre() {
           <li>En janvier / février</li>
         </ul>
         <p>
-        Venez découvrir le <span className="highl"> Roller Derby </span>lors des<span className="highl"> stages d’été</span> les dimanches 21 et 28 juillet de 16h30 à 19h30.
+        Rentrée <span className="highl"> Cours de patin, derbyschool, essais et recrutement</span> les dimanches 21 septembre et 5 octobre de 17h00 à 19h30.
         </p>
         <p>
           Au programme:
@@ -38,8 +38,8 @@ export default function nousRejoindre() {
           <li>🔥 Essai Roller Derby</li>
         </ul>
         <p style={{textAlign:'center'}}>
-          <a href="https://forms.gle/2sphHKdP1GNWo6p17" target = '_blank' >
-            Je m’inscris aux stages d’été</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzasI1TdubwlUVNjiWElNhJcll5C4n3b6C_fKMr14X-UOLlA/viewform?usp=header" target = '_blank' >
+            Je m’inscris aux essais</a>
         </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
@@ -47,7 +47,7 @@ export default function nousRejoindre() {
           <span className="highl">tous les niveaux sont les bienvenus</span>.
         </p>
         <p>
-          Les <span className="highl"> cours de patin</span> du vendredi sont là pour ça.
+          Les <span className="highl"> cours de patin</span> du dimanche sont là pour ça.
         </p>
         <h2>Quel est le processus de recrutement ?</h2>
         <p>Venir à notre rencontre lors d’une session de découverte.</p>

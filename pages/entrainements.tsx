@@ -18,8 +18,9 @@ export default function Entrainements() {
       <section className={classes.container}>
           <article>
           <h2>Roller derby</h2>
-        <h3 className={classes.subtitle}>Mercredi - 20h00 / 22h00</h3>
-        <h4 className={classes.details}>Entraînement tous niveaux</h4>
+        <h3 className={classes.subtitle}>Mercredi - 19h45 / 22h00</h3>
+        <h4 className={classes.details}>Entraînement Rookie / Inter / Advanced</h4>
+        <h4 className={classes.details}>Formation arbitrage 1x par mois / Fresh Meat</h4>
         <div className={classes.address}>
           <p>Stade Paul VAUQUELIN</p>
           <p>Salle LESUEUR</p>
@@ -29,8 +30,8 @@ export default function Entrainements() {
         </div>
           </article>
           <article>
-        <h3 className={classes.subtitle}>Dimanche - 17h00 / 19h30</h3>
-        <h4 className={classes.details}>Entraînement tous niveaux</h4>
+        <h3 className={classes.subtitle}>Vendredi - 19h30 / 22h00</h3>
+        <h4 className={classes.details}>Entraînement Rookie / Inter / Advanced</h4>
         <div className={classes.address}>
           <p>Gymnase Jesse OWENS</p>
           <p>Parc de SIGNA</p>
@@ -42,8 +43,8 @@ export default function Entrainements() {
           </article>
           <article>
           <h2>Cours de patin</h2>
-        <h3 className={classes.subtitle}>Vendredi - 19h30 / 21h30</h3>
-        <h4 className={classes.details}>Apprentissage du patinage</h4>
+        <h3 className={classes.subtitle}>Dimanche - 17h00 / 19h30</h3>
+        <h4 className={classes.details}>Apprentissage du patinage / Derbyschool</h4>
         <div className={classes.address}>
           <p>Gymnase Jesse OWENS</p>
           <p>Parc de Signa</p>
