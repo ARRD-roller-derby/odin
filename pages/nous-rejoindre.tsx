@@ -24,14 +24,29 @@ export default function nousRejoindre() {
           <li>En septembre</li>
           <li>En janvier / février</li>
         </ul>
+        <p>
+        Rentrée <span className="highl"> Cours de patin, derbyschool, essais et recrutement</span> les dimanches 21 septembre et 5 octobre de 17h00 à 19h30.
+        </p>
+        <p>
+          Au programme:
+        </p>
+        <ul>
+          <li>ℹ️ Présentation du roller derby et de l’association ARRD-Maromme</li>
+          <li>🧦 Sock derby (initiation sans patin)</li>
+          <li>🛼 Essai de patinage (accompagné·e)</li>
+          <li>🔥 Essai Roller Derby</li>
+        </ul>
+        <p style={{textAlign:'center'}}>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdzasI1TdubwlUVNjiWElNhJcll5C4n3b6C_fKMr14X-UOLlA/viewform?usp=header" target = '_blank' >
+            Je m’inscris aux essais</a>
+        </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
           Pas besoin d’être un.e as du patin pour nous rejoindre,{' '}
           <span className="highl">tous les niveaux sont les bienvenus</span>.
         </p>
         <p>
-          Les <span className="highl"> cours de patin</span> du vendredi sont là
-          pour ça.
+          Les <span className="highl"> cours de patin</span> du dimanche sont là pour ça.
         </p>
         <h2>Quel est le processus de recrutement ?</h2>
         <p>Venir à notre rencontre lors d’une session de découverte.</p>
