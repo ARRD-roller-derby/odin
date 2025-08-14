@@ -66,20 +66,15 @@ export default function nousRejoindre() {
           Pour connaître les dates des sessions de découverte, rendez-vous sur
           notre page Facebook dans la section “Actualités” du site.
         </p>
-        <h2>Profitez de 3 entraînements d’essai gratuits</h2>
+        <h2>Profitez de 2 entraînements d’essai gratuits</h2>
         <p>
           En septembre seulement, vous pouvez “tester” le roller derby
-          gratuitement, lors de <span className="highl">3 entraînements</span>.
+          gratuitement, lors de <span className="highl">2 entraînements</span>.
         </p>
         <p>Vous pourrez ensuite décider de vous inscrire … ou non ! ;-)</p>
         <h2>Inscrivez-vous</h2>
         <p>
           Sur prise de contact à <a href = "mailto: contact.arrd@gmail.com? subject=notre adresse mail">contact.arrd@gmail.com</a>
-           , nous vous fournissons le dossier d’inscription à l’asso.
-        </p>
-        <p>
-          Un certificat médical autorisant la pratique du roller derby en
-          compétition vous sera demandé.
         </p>
         <p>
           Le montant de l’adhésion est de{" "}
