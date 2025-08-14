@@ -1,22 +1,21 @@
-import LayoutPage from "../lib/LayoutPage/LayoutPage";
-import classes from "./../styles/Page.module.css";
-import dynamic from "next/dynamic";
+import LayoutPage from '../lib/LayoutPage/LayoutPage'
+import classes from './../styles/Page.module.css'
+import dynamic from 'next/dynamic'
 
 export default function Entrainements() {
   const MapWithNoSSR = dynamic(
-    () => import("../lib/TrainingsMap/TrainingsMap"),
+    () => import('../lib/TrainingsMap/TrainingsMap'),
     {
       ssr: false,
     }
-  );
+  )
   return (
     <LayoutPage
       title="Les entraînements"
       description="Consultez les informations liées à nos sessions d'entraînement"
-      img="/training.webp"
     >
       <section className={classes.container}>
-          <article>
+        <article>
           <h2>Roller derby</h2>
         <h3 className={classes.subtitle}>Mercredi - 19h45 / 22h00</h3>
         <h4 className={classes.details}>Entraînement Rookie / Inter / Advanced</h4>
@@ -58,7 +57,6 @@ export default function Entrainements() {
           <MapWithNoSSR />
         </div>
       </section>
-
     </LayoutPage>
-  );
+  )
 }

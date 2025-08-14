@@ -6,7 +6,6 @@ export default function Ms() {
     <LayoutPage
       title="Les Minimum skills"
       description="Ce qu’on appelle “Minimum Skills” (MS), c’est le niveau théorique et pratique à atteindre pour pouvoir jouer au roller derby en toute sécurité et participer à des matchs."
-      img="/ms.webp"
     >
       <div className="container">
         <p>

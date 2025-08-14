@@ -1,4 +1,4 @@
-import LayoutPage from "../lib/LayoutPage/LayoutPage";
+import LayoutPage from '../lib/LayoutPage/LayoutPage'
 
 export default function nousRejoindre() {
   return (
@@ -6,7 +6,6 @@ export default function nousRejoindre() {
       title="Nous rejoindre"
       description="L’association recrute très volontiers de nouvelles personnes, à partir de 16 ans, pour grossir les rangs de ses équipes féminines et masculines.
       Nous recrutons aussi des NSO ou arbitres."
-      img="/join.webp"
     >
       <div className="container">
         <h2>Comment nous rejoindre ?</h2>
@@ -18,7 +17,7 @@ export default function nousRejoindre() {
         <p>Nous recrutons aussi des gens pour arbitrer.</p>
         <p>Si ce sport t’intéresse, n’hésite surtout pas à nous rejoindre !</p>
         <p>
-          Nous accueillons les nouvelles recrues{" "}
+          Nous accueillons les nouvelles recrues{' '}
           <span className="highl">deux fois dans l’année:</span>
         </p>
         <ul>
@@ -43,7 +42,7 @@ export default function nousRejoindre() {
         </p>
         <h2>Quel niveau est attendu ?</h2>
         <p>
-          Pas besoin d’être un.e as du patin pour nous rejoindre,{" "}
+          Pas besoin d’être un.e as du patin pour nous rejoindre,{' '}
           <span className="highl">tous les niveaux sont les bienvenus</span>.
         </p>
         <p>
@@ -57,7 +56,7 @@ export default function nousRejoindre() {
         </p>
         <p>
           Ces moments ouverts à tous sur inscription sont l’occasion de
-          découvrir les bases du roller derby, de chausser des patins{" "}
+          découvrir les bases du roller derby, de chausser des patins{' '}
           <span className="highl">(on prête le matériel)</span> … Et de voir si
           vous vous sentez bien en notre compagnie (c’est important pour un
           sport d’équipe !).
@@ -77,10 +76,13 @@ export default function nousRejoindre() {
           Sur prise de contact à <a href = "mailto: contact.arrd@gmail.com? subject=notre adresse mail">contact.arrd@gmail.com</a>
         </p>
         <p>
-          Le montant de l’adhésion est de{" "}
+          Le montant de l’adhésion est de{' '}
           <span className="highl">80 € tout inclus</span> pour le derby.
         </p>
-        <p>Et de <span className="highl"> 50€ par trimestre</span> pour les cours de patin.</p>
+        <p>
+          Et de <span className="highl"> 50€ par trimestre</span> pour les cours
+          de patin.
+        </p>
         <h2>Equipez-vous !</h2>
         <p>C’est un aspect important de ce sport !</p>
         <p>
@@ -100,5 +102,5 @@ export default function nousRejoindre() {
         </p>
       </div>
     </LayoutPage>
-  );
+  )
 }

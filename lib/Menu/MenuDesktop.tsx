@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import classes from './menu.module.css'
 import Link from 'next/link'
 import { links } from './links'
@@ -53,7 +54,8 @@ export default function MenuDesktop() {
                 <a
                   key={link.title}
                   className={classes.panelMenuLink}
-                  {...link}
+                  href={link.href}
+                  title={link.title}
                   rel="noreferrer"
                   target="_blank"
                 >
