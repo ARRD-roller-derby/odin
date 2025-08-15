@@ -23,8 +23,8 @@ export default function Entrainements() {
         <div className={classes.address}>
           <p>Stade Paul VAUQUELIN</p>
           <p>Salle LESUEUR</p>
-          <p>Rue Ernest Danet</p>
-          <p>76 150 MAROMME</p>
+          <p>91 rue Ernest Danet</p>
+          <p>76150 MAROMME</p>
           <p>{`(`}première salle sur la gauche{`)`}</p>
         </div>
           </article>
@@ -33,23 +33,19 @@ export default function Entrainements() {
         <h4 className={classes.details}>Entraînement Rookie / Inter / Advanced</h4>
         <div className={classes.address}>
           <p>Gymnase Jesse OWENS</p>
-          <p>Parc de SIGNA</p>
-          <p>Route de Duclair</p>
-          <p>76 150 MAROMME</p>
-          <p>{`(`}accès à l{`'`}angle des rues Denis Papin et Jacquard{`)`}</p>
+          <p>Rue Denis Papin</p>
+          <p>76150 MAROMME</p>
 
         </div>
           </article>
           <article>
-          <h2>Cours de patin</h2>
+          <h2>Cours de patin / Derbyschool</h2>
         <h3 className={classes.subtitle}>Dimanche - 17h00 / 19h30</h3>
-        <h4 className={classes.details}>Apprentissage du patinage / Derbyschool</h4>
+        <h4 className={classes.details}>Apprentissage du patin / Derbyschool</h4>
         <div className={classes.address}>
           <p>Gymnase Jesse OWENS</p>
-          <p>Parc de Signa</p>
-          <p>Route de Duclair</p>
-          <p>76 150 MAROMME</p>
-          <p>{`(`}accès à l{`'`}angle des rues Denis Papin et Jacquard{`)`}</p>
+          <p>Rue Denis Papin</p>
+          <p>76150 MAROMME</p>
         </div>
           </article>
 
