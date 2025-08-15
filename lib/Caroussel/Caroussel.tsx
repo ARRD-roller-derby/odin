@@ -29,7 +29,7 @@ export default function Caroussel({ images }) {
     <div className={classes.container}>
       <div className={classes.slider}>
         <div className={classes.titleContainer}>
-          <h1 className={classes.title}>association ROUEN ROLLER DERBY</h1>
+          <h1 className={classes.title}>ARRD</h1>
           <h2 className={classes.subtitle}>- maromme -</h2>
         </div>
         {size && (
