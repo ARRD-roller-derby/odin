@@ -69,7 +69,7 @@ export default function RollerDerby() {
           gagne le match (1 point par bloqueur·se adverse dépassé·e).
         </p>
         <p> Pour cela, les contacts sont autorisés mais réglementés !</p>
-        <h2>Un sport cadré qui mobilise du monde </h2>
+        <h2>Arbitrage et règles </h2>
         <p>
           Il nous faut pas moins de{" "}
           <span className="highl">20 arbitres (referees)</span> pour assurer un
@@ -117,3 +117,4 @@ export default function RollerDerby() {
     </LayoutPage>
   );
 }
+
