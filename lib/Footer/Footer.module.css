@@ -1,4 +1,5 @@
 .container {
+    width: 100%;
     min-height: 300px;
     background: rgb(54, 54, 54);
     justify-self: end;

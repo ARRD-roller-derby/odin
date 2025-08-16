@@ -69,7 +69,7 @@ export default function nousRejoindre() {
         <h2>Combien ça coûte ?</h2>
         <ul>
           <li>
-            Roller derby : <span className="highl">80 €</span> pour la saison
+            Roller derby : <span className="highl">80€</span> pour la saison
             (septembre à juillet)
           </li>
           <li>
