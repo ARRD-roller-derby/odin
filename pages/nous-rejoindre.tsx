@@ -1,6 +1,4 @@
 import LayoutPage from "../lib/LayoutPage/LayoutPage";
-import LayoutPage from "../lib/LayoutPage/LayoutPage";
-
 export default function nousRejoindre() {
   return (
     <LayoutPage
@@ -14,11 +12,10 @@ export default function nousRejoindre() {
           Nous recrutons joueur·ses, arbitres, élèves de patinage ou simples
           membres à partir de <span className="highl">16 ans</span> pour le
           derby et à partir de <span className="highl">14 ans</span> pour les
-          cours de patin.
-          Nous recrutons joueur·ses, arbitres, élèves de patinage ou simples
-          membres à partir de <span className="highl">16 ans</span> pour le
-          derby et à partir de <span className="highl">14 ans</span> pour les
-          cours de patin.
+          cours de patin. Nous recrutons joueur·ses, arbitres, élèves de
+          patinage ou simples membres à partir de{" "}
+          <span className="highl">16 ans</span> pour le derby et à partir de{" "}
+          <span className="highl">14 ans</span> pour les cours de patin.
         </p>
         <ul>
           <li>
@@ -70,8 +67,7 @@ export default function nousRejoindre() {
         <p>
           En septembre seulement, vous pouvez essayer gratuitement{" "}
           <span className="highl">2 entraînements</span> de roller derby /
-          patin.
-          Pas besoin d’être un·e star du patin pour nous rejoindre,{" "}
+          patin. Pas besoin d’être un·e star du patin pour nous rejoindre,{" "}
           <span className="highl">tous les niveaux sont les bienvenus</span> !
           Les <span className="highl">cours de patin et la derbyschool</span> du
           dimanche sont là pour t&apos;apprendre toutes les bases.
@@ -85,8 +81,7 @@ export default function nousRejoindre() {
         <p>
           <span className="highl">Essais cours de patin + derbyschool : </span>{" "}
           les dimanches 21 septembre et 5 octobre de 17h00 à 19h30. Au programme
-          :
-          <span className="highl">Essais cours de patin + derbyschool : </span>{" "}
+          :<span className="highl">Essais cours de patin + derbyschool : </span>{" "}
           les dimanches 21 septembre et 5 octobre de 17h00 à 19h30. Au programme
           :
         </p>
@@ -103,6 +98,7 @@ export default function nousRejoindre() {
           >
             Je m’inscris aux essais
           </a>
+        </p>
         <p style={{ textAlign: "center" }}>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdzasI1TdubwlUVNjiWElNhJcll5C4n3b6C_fKMr14X-UOLlA/viewform?usp=header"
@@ -137,20 +133,8 @@ export default function nousRejoindre() {
           <li>protège-coudes</li>
           <li>protège-genoux</li>
           <li>protège-dents (non nécessaire pour les cours de patin)</li>
-          <li>protège-dents (non nécessaire pour les cours de patin)</li>
         </ul>
         <p>
-          <span className="highl">
-            On prête le matériel pour les essais et ensuite il est possible de
-            louer patins et protections pour un semestre.
-          </span>
-        </p>
-        <p>
-          Si vous cherchez déjà à vous équiper, rendez-vous sur le shop{" "}
-          <a href="https://shop.myrollerderby.com/fr/" target="_blank">
-            MyRollerDerby
-          </a>{" "}
-          et n’hésitez pas à demander conseil à vos nouvelles coéquipièr·es !
           <span className="highl">
             On prête le matériel pour les essais et ensuite il est possible de
             louer patins et protections pour un semestre.
@@ -165,6 +149,5 @@ export default function nousRejoindre() {
         </p>
       </div>
     </LayoutPage>
-  );
   );
 }
