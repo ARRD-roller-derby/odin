@@ -12,31 +12,9 @@ export default function nousRejoindre() {
           Nous recrutons joueur·ses, arbitres, élèves de patinage ou simples
           membres à partir de <span className="highl">16 ans</span> pour le
           derby et à partir de <span className="highl">14 ans</span> pour les
-          cours de patin. Nous recrutons joueur·ses, arbitres, élèves de
-          patinage ou simples membres à partir de{" "}
-          <span className="highl">16 ans</span> pour le derby et à partir de{" "}
-          <span className="highl">14 ans</span> pour les cours de patin.
+          cours de patin.
         </p>
         <ul>
-          <li>
-            Rendez-vous dès maintenant sur notre espace{" "}
-            <a
-              href="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd"
-              target="_blank"
-            >
-              HelloAsso
-            </a>
-          </li>
-          <li>
-            Après un essai, vous recevrez toutes les informations utiles et le
-            dossier d&apos;inscription par mail{" "}
-          </li>
-          <li>
-            Ou simplement, écrivez-nous :{" "}
-            <a href="mailto: contact.arrd@gmail.com? subject=notre adresse mail">
-              contact.arrd@gmail.com
-            </a>
-          </li>
           <li>
             Rendez-vous dès maintenant sur notre espace{" "}
             <a
@@ -67,38 +45,18 @@ export default function nousRejoindre() {
         <p>
           En septembre seulement, vous pouvez essayer gratuitement{" "}
           <span className="highl">2 entraînements</span> de roller derby /
-          patin. Pas besoin d’être un·e star du patin pour nous rejoindre,{" "}
-          <span className="highl">tous les niveaux sont les bienvenus</span> !
-          Les <span className="highl">cours de patin et la derbyschool</span> du
-          dimanche sont là pour t&apos;apprendre toutes les bases.
-        </p>
-        <h2>Essayer sans s&apos;engager</h2>
-        <p>
-          En septembre seulement, vous pouvez essayer gratuitement{" "}
-          <span className="highl">2 entraînements</span> de roller derby /
           patin.
         </p>
         <p>
           <span className="highl">Essais cours de patin + derbyschool : </span>{" "}
           les dimanches 21 septembre et 5 octobre de 17h00 à 19h30. Au programme
-          :<span className="highl">Essais cours de patin + derbyschool : </span>{" "}
-          les dimanches 21 septembre et 5 octobre de 17h00 à 19h30. Au programme
           :
         </p>
         <ul>
           <li>ℹ️ Présentation de l’association, échauffement sans patins</li>
-          <li>ℹ️ Présentation de l’association, échauffement sans patins</li>
           <li>🧦 Sock derby (initiation sans patin)</li>
           <li>🛼 Essai de patinage (accompagné·e)</li>
         </ul>
-        <p style={{ textAlign: "center" }}>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdzasI1TdubwlUVNjiWElNhJcll5C4n3b6C_fKMr14X-UOLlA/viewform?usp=header"
-            target="_blank"
-          >
-            Je m’inscris aux essais
-          </a>
-        </p>
         <p style={{ textAlign: "center" }}>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdzasI1TdubwlUVNjiWElNhJcll5C4n3b6C_fKMr14X-UOLlA/viewform?usp=header"
