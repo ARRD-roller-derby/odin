@@ -16,6 +16,9 @@ COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
+# Les variables NEXT_PUBLIC_* doivent être disponibles au moment du build
+ARG NEXT_PUBLIC_URL_BUCKET
+ENV NEXT_PUBLIC_URL_BUCKET=${NEXT_PUBLIC_URL_BUCKET:-https://arrd.s3.fr-par.scw.cloud/}
 
 RUN pnpm build
 
@@ -33,5 +36,7 @@ EXPOSE 3000
 
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+# Les variables NEXT_PUBLIC_* doivent être définies au runtime aussi
+ENV NEXT_PUBLIC_URL_BUCKET=""
 
 CMD ["node", "server.js"]
