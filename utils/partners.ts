@@ -16,6 +16,13 @@ export const partners: Array<partnersInterface> = [
     heigth: 150,
   },
   {
+    title: "MyRollerDerby",
+    href: "https://www.myrollerderby.com/fiche-club/association-rouen-roller-derby",
+    src: url + "/logo_myrollerderby.svg",
+    width: 150,
+    heigth: 150,
+  },
+  {
     title: "FDVA",
     href: "https://associations.gouv.fr/FDVA.html",
     src: url + "/fdva.webp",
