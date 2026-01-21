@@ -27,7 +27,7 @@ export const links = [
   },
   {
     title: 'Actualités',
-    href: 'https://www.facebook.com/ARRD76',
+    href: 'https://www.myrollerderby.com/fiche-club/association-rouen-roller-derby',
     target: '_blank',
     side: 'left',
     external: true,
