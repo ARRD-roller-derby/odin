@@ -44,7 +44,7 @@ export default function BlockDerby() {
         <div className="containerImg">
           <div className="img">
             <img
-              src={`${process.env.NEXT_PUBLIC_URL_BUCKET}pictures/rd_explain.webp`}
+              src="/rd_explain.webp"
               width="800"
               height="894"
               alt="roller derby"
