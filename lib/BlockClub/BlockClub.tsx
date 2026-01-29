@@ -31,7 +31,7 @@ export default function BlockClub() {
         <div className="containerImg">
           <div className="img">
             <img
-              src={`${process.env.NEXT_PUBLIC_URL_BUCKET}pictures/club.webp`}
+              src="/club.webp"
               width="1192"
               height="672"
               alt="roller derby"

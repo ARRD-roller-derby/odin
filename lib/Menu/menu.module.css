@@ -16,11 +16,11 @@
 
 .containerMobile {
   position: absolute;
-  bottom: 100px;
+  bottom: 50px;
   left: 0;
   right: 0;
   animation: containerDesktop 600ms ease-in-out forwards;
-  animation-delay: 800ms;
+
   transform: translateY(100%);
 }
 
@@ -149,18 +149,18 @@
 
 .panelMenu {
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
-  left:100%;
+  left: 100%;
   right: -100%;
-  background: rgba(255,255,255,.9);
+  background: rgba(255, 255, 255, .9);
   transition: 300ms ease-in-out;
   z-index: 100;
   padding: 50px 20px 20px 20px;
   overflow-y: auto;
 }
 
-.panelMenu[data-isopen="true"]{
+.panelMenu[data-isopen="true"] {
   left: 0;
   right: 0;
 }
@@ -177,6 +177,7 @@
 .panelMenuLinks a {
   text-decoration: none !important;
 }
+
 .panelMenuLink:visited,
 .panelMenuLink {
   font-size: 2em;
