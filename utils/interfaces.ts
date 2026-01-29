@@ -2,8 +2,6 @@ export interface partnersInterface {
   title: string;
   href: string;
   src: string;
-  width: number;
-  heigth: number;
 }
 
 export interface fbArticleInterface {

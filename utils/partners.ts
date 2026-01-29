@@ -1,32 +1,25 @@
 import { partnersInterface } from './interfaces';
-const url = process.env.NEXT_PUBLIC_URL_BUCKET + 'partners'
+
 export const partners: Array<partnersInterface> = [
   {
     title: "Ville de Maromme",
     href: "http://www.maromme.fr",
-    src: url + "/logo_maromme.svg",
-    width: 150,
-    heigth: 150,
+    src: "/partners/logo_maromme.svg",
   },
   {
     title: "Le vixen",
     href: "https://www.facebook.com/vixnrouen",
-    src: url + "/vixen_logo.webp",
-    width: 150,
-    heigth: 150,
+    src: "/partners/vixen_logo.webp",
   },
   {
     title: "MyRollerDerby",
     href: "https://www.myrollerderby.com/fiche-club/association-rouen-roller-derby",
-    src: url + "/logo_myrollerderby.svg",
-    width: 150,
-    heigth: 150,
+    src: "/partners/logo_myrollerderby.svg",
+
   },
   {
     title: "FDVA",
     href: "https://associations.gouv.fr/FDVA.html",
-    src: url + "/fdva.webp",
-    width: 150,
-    heigth: 150,
+    src: "/partners/fdva.webp",
   },
 ];
