@@ -4,15 +4,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useEffect, useState } from "react";
 import Menu from "../Menu/Menu";
+import useIsMobile from "../../utils/useIsMobile";
 
-export default function Caroussel({ images }) {
+export default function Caroussel() {
+  const isMobile = useIsMobile();
   const [size, setSize] = useState<
     undefined | { width: number; height: number }
   >(undefined);
 
-  useEffect(() => {
-    handleResize();
-  }, [images]);
+  const NUM_IMAGES = isMobile ? 4 : 3;
 
   function handleResize() {
     const width = window.innerWidth,
@@ -22,6 +22,7 @@ export default function Caroussel({ images }) {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
+    handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -41,10 +42,10 @@ export default function Caroussel({ images }) {
             fade
             className={classes.carroussel}
           >
-            {images.map((slide: string) => (
-              <div className={classes.slide} key={slide}>
+            {Array.from({ length: NUM_IMAGES }, (_, index) => index + 1).map((num: number) => (
+              <div className={classes.slide} key={num}>
                 <img
-                  src={process.env.NEXT_PUBLIC_URL_BUCKET + slide}
+                  src={`/${isMobile ? 'mobile' : 'desktop'}/${num}.webp`}
                   width={size.width}
                   height={size.height}
                 />
