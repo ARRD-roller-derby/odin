@@ -68,9 +68,9 @@
 }
 
 .carroussel img {
-  height: 100dvh;
-  width: auto;
-  object-fit: contain;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
   object-position: center;
 }
 
