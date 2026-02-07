@@ -10,7 +10,6 @@ export default function Caroussel() {
 
   const NUM_IMAGES = isMobile ? 4 : 3;
 
-
   return (
     <div className={classes.container}>
       <div className={classes.slider}>
@@ -30,6 +29,7 @@ export default function Caroussel() {
           {Array.from({ length: NUM_IMAGES }, (_, index) => index + 1).map((num: number) => (
             <div className={classes.slide} key={num}>
               <img
+                alt={`Image ${num}`}
                 src={`/${isMobile ? 'mobile' : 'desktop'}/${num}.webp`}
                 width={isMobile ? 1080 : 1920}
                 height={isMobile ? 1920 : 1080}
