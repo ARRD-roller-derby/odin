@@ -95,8 +95,6 @@
 }
 
 @media screen and (max-width: 1500px) {
-
-
   .titleContainer {
     top: 5%;
   }
@@ -162,4 +160,10 @@
     font-size: 3em;
   }
 
+  .carroussel img {
+    height: 100dvh;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+  }
 }
