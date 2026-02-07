@@ -2,7 +2,6 @@ import classes from "./Caroussel.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { useEffect, useState } from "react";
 import Menu from "../Menu/Menu";
 import useIsMobile from "../../utils/useIsMobile";
 
