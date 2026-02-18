@@ -3,6 +3,7 @@ import Caroussel from '../lib/Caroussel/Caroussel'
 import styles from '../styles/Home.module.css'
 import BlockDerby from '../lib/BlockDerby/BlockDerby'
 import BlockClub from '../lib/BlockClub/BlockClub'
+import BlockForm from '../lib/BlockForm/BlockForm'
 import Footer from '../lib/Footer/Footer'
 import BlockTraining from '../lib/BlockTraining/BlockTraining'
 import JoinButton from '../lib/JoinButton/JoinButton'
@@ -40,6 +41,7 @@ export default function Home() {
         <Caroussel />
       </div>
       <div className={styles.blocks}>
+        <BlockForm />
         <BlockDerby />
         <BlockClub />
         <BlockTraining />

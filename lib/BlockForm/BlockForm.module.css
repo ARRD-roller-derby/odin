@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.container p {
+  margin: 5px;
+}
+
+.buttons a {
+  grid-column: 1/3;
+  display: flex;
+  z-index: 5;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.iframe {
+  width: 300px;
+  border: none;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
