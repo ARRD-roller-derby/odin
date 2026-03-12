@@ -28,13 +28,6 @@ export default function BlockForm() {
         <div className={classes.txt}>
           <h2>Collecte</h2>
           <div className={classes.desc}>
-            {/* <p>
-              Le roller derby est un{" "}
-              <span className="highl">
-                sport d’équipe, de contact et de vitesse
-              </span>{" "}
-              qui se pratique sur rollers quads.
-            </p> */}
             <p>
               Notre équipe se déplace à Mérignac (Bordeaux) pour la 2ème étape
               du championnat nationale 1 open (mixte). Nos joueur·ses et
