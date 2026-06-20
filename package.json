@@ -11,6 +11,11 @@
     "test:watch": "jest --watch",
     "edit:coverage": "npm test -- --env=jsdom --coverage"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "unrs-resolver"
+    ]
+  },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.400.0",
     "@blocknote/mantine": "^0.16.0",
