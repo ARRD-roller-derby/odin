@@ -26,21 +26,25 @@ export default function BlockForm() {
     <BlockIndex position="left">
       <div className={classes.container}>
         <div className={classes.txt}>
-          <h2>Collecte</h2>
+          <h2>Essais Roller Derby Été 2026</h2>
           <div className={classes.desc}>
             <p>
-              Notre équipe se déplace à Mérignac (Bordeaux) pour la 2ème étape
-              du championnat nationale 1 open (mixte). Nos joueur·ses et
-              arbitres ont besoin de votre aide pour réaliser ce long voyage
-              depuis la Normandie dans les meilleurs conditions (un bon matelas
-              et un petit dej des champions, de vendredi soir à lundi matin, ça
-              fait des frais).
+              Venez découvrir notre merveilleuse discipline qu&apos;est le roller
+              derby ! (gratuit)
             </p>
             <p>
-              En nous apportant ton soutien, tu peux en plus déduire ton don de
-              tes impôts sur le revenu ! Et tu remportes notre reconnaissance
-              éternelle. On pensera bien fort à toi sur le track. Merci de nous
-              soutenir !
+              <span className="highl">Dimanche 5 et/ou 26 juillet de 16h30 à 19h30.</span>
+            </p>
+            <p>Au programme :</p>
+            <p>- Un échauffement commun tous niveaux confondus</p>
+            <p>- Patinage et réalisation d&apos;exercices simples</p>
+            <p>
+              - Un mini-point d&apos;apprentissage des règles du roller derby avec
+              mise en situation (sans patins)
+            </p>
+            <p>
+              - En fin de session un petit moment d&apos;échange pendant lequel vous
+              pourrez poser toutes vos questions.
             </p>
           </div>
         </div>
@@ -50,7 +54,7 @@ export default function BlockForm() {
               id="haWidget"
               allowTransparency={true}
               className={classes.iframe}
-              src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/collectes/championnat-n1-open-etape-2/widget-vignette"
+              src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/evenements/essai-roller-derby-ete-2026-16-ans-et-plus/widget-vignette"
               title="Widget HelloAsso"
             ></iframe>
           </div>

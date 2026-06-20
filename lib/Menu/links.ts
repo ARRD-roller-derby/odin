@@ -26,7 +26,7 @@ export const links = [
     side: 'left',
   },
   {
-    title: 'Actualités',
+    title: 'MyRollerDerby',
     href: 'https://www.myrollerderby.com/fiche-club/association-rouen-roller-derby',
     target: '_blank',
     side: 'left',

@@ -6,6 +6,23 @@
   width: 100%;
 }
 
+.containerIframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.iframe {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  min-height: 950px;
+  border: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -37,5 +54,14 @@
 @media screen and (max-width: 500px) {
   .title {
     font-size: 2.5em;
+  }
+
+  .containerIframe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .iframe {
+    min-height: 1150px;
   }
 }
