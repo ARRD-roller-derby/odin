@@ -6,9 +6,9 @@ WORKDIR /app
 
 COPY package.json pnpm-lock.yaml* ./
 
-RUN npm install -g pnpm
+RUN corepack enable && corepack prepare pnpm@10.28.1 --activate
 
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile --config.strict-dep-builds=false
 
 FROM base AS builder
 
