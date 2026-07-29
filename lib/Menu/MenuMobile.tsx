@@ -28,7 +28,7 @@ export default function MenuMobile({ fixed = false }: { fixed?: boolean }) {
                 <a
                   key={link.href}
                   className={classes.panelMenuLink}
-                  {...link}
+                  href={link.href}
                   rel="noreferrer"
                   target="_blank"
                   onClick={() => setIsOpen(false)}

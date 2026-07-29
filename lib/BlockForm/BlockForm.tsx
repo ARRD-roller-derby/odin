@@ -10,9 +10,11 @@ export default function BlockForm() {
         return;
       }
 
-      const haWidgetElement = document.getElementById("haWidget");
+      const haWidgetElement = document.getElementById("haWidgetVignette");
       if (haWidgetElement instanceof HTMLIFrameElement) {
-        haWidgetElement.height = `${data.height}px`;
+        // Ajouter du padding pour s'assurer que tout est visible
+        const paddedHeight = data.height;
+        haWidgetElement.style.height = `${paddedHeight}px`;
       }
     };
 
@@ -26,14 +28,14 @@ export default function BlockForm() {
     <BlockIndex position="left">
       <div className={classes.container}>
         <div className={classes.txt}>
-          <h2>Essais Roller Derby Été 2026</h2>
+          <h2>Rentrée 2026 : Essais Roller Derby</h2>
           <div className={classes.desc}>
             <p>
               Venez découvrir notre merveilleuse discipline qu&apos;est le roller
               derby ! (gratuit)
             </p>
             <p>
-              <span className="highl">Dimanche 5 et/ou 26 juillet de 16h30 à 19h30.</span>
+              <span className="highl">Tous les dimanches de septembre de 16h30 à 19h30.</span>
             </p>
             <p>Au programme :</p>
             <p>- Un échauffement commun tous niveaux confondus</p>
@@ -51,10 +53,9 @@ export default function BlockForm() {
         <div className="containerImg">
           <div className="img">
             <iframe
-              id="haWidget"
-              allowTransparency={true}
+              id="haWidgetVignette"
               className={classes.iframe}
-              src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/evenements/essai-roller-derby-ete-2026-16-ans-et-plus/widget-vignette"
+              src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/evenements/essai-roller-derby-2026-2027/widget-vignette"
               title="Widget HelloAsso"
             ></iframe>
           </div>

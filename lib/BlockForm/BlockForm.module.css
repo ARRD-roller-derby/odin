@@ -22,8 +22,13 @@
 }
 
 .iframe {
-  width: 300px;
+  width: 100%;
+  max-width: 350px;
   border: none;
+  display: block;
+  box-sizing: border-box;
+  min-height: 500px;
+  height: auto;
 }
 
 @media screen and (max-width: 950px) {

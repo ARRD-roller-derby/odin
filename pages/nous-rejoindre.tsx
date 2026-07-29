@@ -1,30 +1,6 @@
-import { useEffect } from "react";
 import LayoutPage from "../lib/LayoutPage/LayoutPage";
 import classes from "../lib/LayoutPage/LayoutPage.module.css";
 export default function NousRejoindre() {
-  useEffect(() => {
-    const handleMessage = (event: MessageEvent) => {
-      if (!/^https:\/\/([a-z0-9-]+\.)?helloasso\.com$/i.test(event.origin)) {
-        return;
-      }
-
-      const data = event.data as { height?: number };
-      if (!data?.height) {
-        return;
-      }
-
-      const haWidget = document.getElementById("haWidget");
-      if (haWidget instanceof HTMLIFrameElement) {
-        haWidget.style.height = `${data.height}px`;
-      }
-    };
-
-    window.addEventListener("message", handleMessage);
-    return () => {
-      window.removeEventListener("message", handleMessage);
-    };
-  }, []);
-
   return (
     <LayoutPage
       title="Nous rejoindre"
@@ -97,13 +73,14 @@ export default function NousRejoindre() {
           <iframe
             id="haWidget"
             className={classes.iframe}
-            src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/evenements/essai-roller-derby-ete-2026-16-ans-et-plus/widget"
+            src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/evenements/essai-roller-derby-2026-2027/widget"
+            scrolling="no"
           ></iframe>
         </div>
         <h2>Combien ça coûte ?</h2>
         <ul>
           <li>
-            Roller derby : <span className="highl">80€</span> pour la saison
+            Roller derby : <span className="highl">85€</span> pour la saison
             (septembre à juillet)
           </li>
           {/* <li>
