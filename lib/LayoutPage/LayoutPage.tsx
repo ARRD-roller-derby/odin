@@ -24,7 +24,7 @@ export default function LayoutPage({
 
   const imgDefault = '/fb.jpg',
     descriptionDefault =
-      "L'Association Rouen Roller Derby (ARRD) est une association de loi 1901 née en septembre 2014 en métropole rouennaise, dans le but de pratiquer un sport qui nous passionne alliant plaisir et compétition, pour les femmes et également les hommes."
+      "Le ARRD - Maromme est une association de loi 1901 née en septembre 2014 en métropole rouennaise, dans le but de pratiquer un sport qui nous passionne alliant plaisir et compétition, pour les femmes et également les hommes."
   const img = img_ || imgDefault
   return (
     <section
@@ -34,7 +34,7 @@ export default function LayoutPage({
       }}
     >
       <Head>
-        <title>{title} | Association Rouen Roller Derby - Maromme</title>
+        <title>{title} | ARRD - Maromme</title>
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content={img} />

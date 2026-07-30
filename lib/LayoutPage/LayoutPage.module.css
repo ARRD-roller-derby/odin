@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-color: var(--color-arrd);
   width: 100%;
+  overflow-x: hidden;
 }
 
 .containerIframe {
@@ -48,13 +49,15 @@
 .main {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .article {
+  width: min(700px, calc(100% - 20px));
   padding: 30px;
   background: var(--color-bg);
   border-radius: 5px;
   max-width: 700px;
-  margin: 20px 10px -15px 10px;
+  margin: 20px auto -15px;
   box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.2);
   opacity: 0.90;
 }
