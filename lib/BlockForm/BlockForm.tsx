@@ -35,7 +35,7 @@ export default function BlockForm() {
               derby ! (gratuit)
             </p>
             <p>
-              <span className="highl">Tous les dimanches de septembre de 16h30 à 19h30.</span>
+              <span className="highl">Tous les dimanches de septembre de 17h00 à 19h30.</span>
             </p>
             <p>Au programme :</p>
             <p>- Un échauffement commun tous niveaux confondus</p>

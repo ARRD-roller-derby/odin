@@ -5,9 +5,9 @@ export const socialNetworks = [
     href: "https://www.facebook.com/ARRD76",
   },
   {
-    title: "Intragram",
+    title: "Instagram",
     src: "/instagram.webp",
-    href: "https://www.instagram.com/arrd76/?hl=fr",
+    href: "https://www.instagram.com/arrd76_maromme/?hl=fr",
   },
   {
     title: "TikTok",
