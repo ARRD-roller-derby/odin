@@ -40,53 +40,21 @@ export default function NousRejoindre() {
           La <span className="highl">derbyschool</span> du
           dimanche est là pour t&apos;apprendre toutes les bases.
         </p>
-        <h2>Essayer sans s&apos;engager</h2>
+        {/* <h2>Essayer sans s&apos;engager</h2>
         <div className={classes.containerIframe}>
-          {/* <p>
-          En septembre seulement, vous pouvez essayer gratuitement{" "}
-          <span className="highl">2 entraînements</span> de roller derby /
-          patin.
-        </p>
-        <p>
-          <span className="highl">Essais cours de patin + derbyschool : </span>{" "}
-          les dimanches 21 septembre et 5 octobre de 17h00 à 19h30. Au programme
-          :
-        </p>
-        <p>
-          <span className="highl">Essais Roller Derby Été 2026 : </span>{" "}
-          les dimanches 5 juillet et 26 juillet de 16h30 à 19h30. Au programme
-          :
-        </p>
-        <ul>
-          <li>ℹ️ Présentation de l’association, échauffement sans patins</li>
-          <li>🧦 Sock derby (initiation sans patin)</li>
-          <li>🛼 Essai de patinage (accompagné·e)</li>
-        </ul>
-        <p style={{ textAlign: "center" }}>
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdzasI1TdubwlUVNjiWElNhJcll5C4n3b6C_fKMr14X-UOLlA/viewform?usp=header"
-            target="_blank"
-          >
-            Je m’inscris aux essais
-          </a>
-        </p> */}
           <iframe
             id="haWidget"
             className={classes.iframe}
             src="https://www.helloasso.com/associations/association-rouen-roller-derby-arrd/evenements/essai-roller-derby-2026-2027/widget"
             scrolling="no"
           ></iframe>
-        </div>
+        </div> */}
         <h2>Combien ça coûte ?</h2>
         <ul>
           <li>
             Roller derby : <span className="highl">85€</span> pour la saison
             (septembre à juillet)
           </li>
-          {/* <li>
-            Cours de patin : <span className="highl">50€ le 1er trimestre</span>{" "}
-            et 30€ les suivants
-          </li> */}
           <li>
             Adhésion simple non pratiquant·e :{" "}
             <span className="highl">20€</span>
